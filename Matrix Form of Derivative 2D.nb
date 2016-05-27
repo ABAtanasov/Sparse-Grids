@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26375,        766]
-NotebookOptionsPosition[     25343,        725]
-NotebookOutlinePosition[     25700,        741]
-CellTagsIndexPosition[     25657,        738]
+NotebookDataLength[     28866,        829]
+NotebookOptionsPosition[     27867,        789]
+NotebookOutlinePosition[     28225,        805]
+CellTagsIndexPosition[     28182,        802]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,11 +22,12 @@ Notebook[{
 Cell[CellGroupData[{
 Cell["\<\
 Constructing the Matrix Corresponding to the Derivative Operator, on the \
-Hierarchical Basis and Sparse Basis 2D [unfinished]\
+Hierarchical Basis and Sparse Basis 2D [need to check spectrum]\
 \>", "Chapter",
  CellChangeTimes->{{3.673230960310951*^9, 3.673230973022921*^9}, {
   3.673276803678762*^9, 3.6732768059363317`*^9}, {3.67327683913017*^9, 
-  3.673276858918556*^9}, {3.673280482051487*^9, 3.6732804899769697`*^9}}],
+  3.673276858918556*^9}, {3.673280482051487*^9, 3.6732804899769697`*^9}, {
+  3.6733485504123297`*^9, 3.673348555603601*^9}}],
 
 Cell[CellGroupData[{
 
@@ -637,9 +638,17 @@ Cell[BoxData[{
   3.6731954984431143`*^9}, {3.673195695801755*^9, 3.673195698084182*^9}, {
   3.673195740549865*^9, 3.673195742188155*^9}, {3.673195791828994*^9, 
   3.67319579584198*^9}, {3.673195916950042*^9, 3.673195927075912*^9}, {
-  3.673272654000877*^9, 3.673272657649295*^9}}],
+  3.673272654000877*^9, 3.673272657649295*^9}}]
+}, Open  ]],
 
-Cell[BoxData[
+Cell[CellGroupData[{
+
+Cell["Algorithms to form the Matrices", "Subsection",
+ CellChangeTimes->{{3.673277052290266*^9, 3.673277061302971*^9}, {
+  3.673277119209675*^9, 3.6732771212386723`*^9}, {3.673348508736053*^9, 
+  3.673348513701818*^9}}],
+
+Cell[BoxData[{
  RowBox[{
   RowBox[{"dxMatrix", "[", 
    RowBox[{"lx_", ",", "ly_"}], "]"}], ":=", 
@@ -667,64 +676,119 @@ Cell[BoxData[
     RowBox[{"{", 
      RowBox[{"kx", ",", "1", ",", "lx"}], "}"}], ",", 
     RowBox[{"{", 
-     RowBox[{"ky", ",", "1", ",", "ly"}], "}"}]}], "]"}]}]], "Input",
+     RowBox[{"ky", ",", "1", ",", "ly"}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dyMatrix", "[", 
+    RowBox[{"lx_", ",", "ly_"}], "]"}], ":=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"hierarchicalCoefficients2D", "[", 
+         RowBox[{
+          RowBox[{"diffy", "[", 
+           RowBox[{
+            RowBox[{"\[Phi]", "[", 
+             RowBox[{"kx", ",", "ky", ",", "i", ",", "j"}], "]"}], ",", 
+            "ly"}], "]"}], ",", "lx", ",", "ly"}], "]"}], "//", "Flatten"}], 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "1", ",", 
+         RowBox[{
+          SuperscriptBox["2", "kx"], "-", "1"}], ",", "2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", "1", ",", 
+         RowBox[{
+          SuperscriptBox["2", "ky"], "-", "1"}], ",", "2"}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"kx", ",", "1", ",", "lx"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ky", ",", "1", ",", "ly"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dxMatrixSparse", "[", "n_", "]"}], ":=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"sparseCoefficients2D", "[", 
+           RowBox[{
+            RowBox[{"diffx", "[", 
+             RowBox[{
+              RowBox[{"\[Phi]", "[", 
+               RowBox[{"row", ",", 
+                RowBox[{"diag", "-", "row", "+", "1"}], ",", "i", ",", "j"}], 
+               "]"}], ",", "n"}], "]"}], ",", "n"}], "]"}], "//", "Flatten"}],
+          ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", "1", ",", 
+           RowBox[{
+            SuperscriptBox["2", "row"], "-", "1"}], ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "1", ",", 
+           RowBox[{
+            SuperscriptBox["2", 
+             RowBox[{"diag", "-", "row", "+", "1"}]], "-", "1"}], ",", "2"}], 
+          "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"row", ",", "1", ",", "diag"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"diag", ",", "1", ",", "n"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dyMatrixSparse", "[", "n_", "]"}], ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"sparseCoefficients2D", "[", 
+          RowBox[{
+           RowBox[{"diffy", "[", 
+            RowBox[{
+             RowBox[{"\[Phi]", "[", 
+              RowBox[{"row", ",", 
+               RowBox[{"diag", "-", "row", "+", "1"}], ",", "i", ",", "j"}], 
+              "]"}], ",", "n"}], "]"}], ",", "n"}], "]"}], "//", "Flatten"}], 
+        ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", 
+          RowBox[{
+           SuperscriptBox["2", "row"], "-", "1"}], ",", "2"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"j", ",", "1", ",", 
+          RowBox[{
+           SuperscriptBox["2", 
+            RowBox[{"diag", "-", "row", "+", "1"}]], "-", "1"}], ",", "2"}], 
+         "}"}]}], "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"row", ",", "1", ",", "diag"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"diag", ",", "1", ",", "n"}], "}"}]}], "]"}]}]}], "Input",
  CellChangeTimes->{{3.673277867319282*^9, 3.6732779300785646`*^9}, {
   3.673277978146747*^9, 3.6732780613417473`*^9}, {3.673278163936036*^9, 
   3.673278194240142*^9}, {3.6732783469534073`*^9, 3.6732783674885817`*^9}, {
   3.673278532659255*^9, 3.673278558822431*^9}, {3.673278639088067*^9, 
-  3.673278640005465*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Flatten", "[", 
-   RowBox[{
-    RowBox[{"dxMatrix", "[", 
-     RowBox[{"2", ",", "2"}], "]"}], ",", "3"}], "]"}], "//", 
-  "Eigenvalues"}]], "Input",
- CellChangeTimes->{{3.6732780328432293`*^9, 3.673278034913744*^9}, {
-  3.673278067562916*^9, 3.673278068620824*^9}, {3.6732786048801413`*^9, 
-  3.6732786423856916`*^9}, {3.673278692735812*^9, 3.673278724193841*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{
-    FractionBox["1", "2"], " ", 
-    RowBox[{"(", 
-     RowBox[{"1", "+", 
-      RowBox[{"\[ImaginaryI]", " ", 
-       SqrtBox["15"]}]}], ")"}]}], ",", 
-   RowBox[{
-    FractionBox["1", "2"], " ", 
-    RowBox[{"(", 
-     RowBox[{"1", "+", 
-      RowBox[{"\[ImaginaryI]", " ", 
-       SqrtBox["15"]}]}], ")"}]}], ",", 
-   RowBox[{
-    FractionBox["1", "2"], " ", 
-    RowBox[{"(", 
-     RowBox[{"1", "-", 
-      RowBox[{"\[ImaginaryI]", " ", 
-       SqrtBox["15"]}]}], ")"}]}], ",", 
-   RowBox[{
-    FractionBox["1", "2"], " ", 
-    RowBox[{"(", 
-     RowBox[{"1", "-", 
-      RowBox[{"\[ImaginaryI]", " ", 
-       SqrtBox["15"]}]}], ")"}]}], ",", "0", ",", "0", ",", "0", ",", "0", 
-   ",", "0"}], "}"}]], "Output",
- CellChangeTimes->{{3.673278035399194*^9, 3.673278069115183*^9}, {
-   3.673278165673627*^9, 3.673278195366611*^9}, 3.673278369427278*^9, 
-   3.6732785767344713`*^9, {3.6732786076909037`*^9, 3.673278613126212*^9}, 
-   3.673278644427115*^9, {3.6732787007406597`*^9, 3.673278724567683*^9}}]
-}, Open  ]]
+  3.673278640005465*^9}, {3.673290353189601*^9, 3.6732903560928698`*^9}, {
+  3.673290433654249*^9, 3.673290460510437*^9}, {3.673314006761815*^9, 
+  3.6733140253354063`*^9}, {3.673347895510769*^9, 3.673347979542997*^9}, {
+  3.67334800955755*^9, 3.673348010890189*^9}, {3.673348519527342*^9, 
+  3.6733485396519337`*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 651},
-WindowMargins->{{Automatic, 43}, {Automatic, 0}},
+WindowSize->{1212, 651},
+WindowMargins->{{Automatic, 25}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -741,31 +805,30 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 366, 6, 153, "Chapter"],
+Cell[580, 22, 429, 7, 109, "Chapter"],
 Cell[CellGroupData[{
-Cell[971, 32, 110, 1, 44, "Subsection"],
-Cell[1084, 35, 4062, 107, 210, "Input"]
+Cell[1034, 33, 110, 1, 44, "Subsection"],
+Cell[1147, 36, 4062, 107, 210, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5183, 147, 115, 1, 44, "Subsection"],
-Cell[5301, 150, 1110, 28, 46, "Input"]
+Cell[5246, 148, 115, 1, 44, "Subsection"],
+Cell[5364, 151, 1110, 28, 46, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6448, 183, 106, 1, 44, "Subsection"],
-Cell[6557, 186, 6727, 193, 338, "Input"]
+Cell[6511, 184, 106, 1, 44, "Subsection"],
+Cell[6620, 187, 6727, 193, 259, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13321, 384, 100, 1, 44, "Subsection"],
-Cell[13424, 387, 4963, 125, 255, "Input"]
+Cell[13384, 385, 100, 1, 44, "Subsection"],
+Cell[13487, 388, 4963, 125, 210, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18424, 517, 154, 2, 44, "Subsection"],
-Cell[18581, 521, 3956, 118, 264, "Input"],
-Cell[22540, 641, 1280, 33, 73, "Input"],
+Cell[18487, 518, 154, 2, 44, "Subsection"],
+Cell[18644, 522, 3956, 118, 208, "Input"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[23845, 678, 400, 9, 28, "Input"],
-Cell[24248, 689, 1055, 31, 81, "Output"]
-}, Open  ]]
+Cell[22637, 645, 219, 3, 44, "Subsection"],
+Cell[22859, 650, 4980, 135, 306, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
