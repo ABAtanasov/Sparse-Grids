@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5982,        177]
+NotebookOptionsPosition[      5307,        150]
+NotebookOutlinePosition[      5666,        166]
+CellTagsIndexPosition[      5623,        163]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Discretized NIntegrate", "Chapter",
+ CellChangeTimes->{{3.673230960310951*^9, 3.673230973022921*^9}, {
+   3.673276803678762*^9, 3.6732768059363317`*^9}, {3.67327683913017*^9, 
+   3.673276858918556*^9}, {3.673280482051487*^9, 3.6732804899769697`*^9}, {
+   3.6733485504123297`*^9, 3.673348555603601*^9}, 3.673576528920843*^9, {
+   3.67361781699356*^9, 3.673617839328032*^9}, {3.6737112175996103`*^9, 
+   3.6737112216170883`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"interiorIntegrate1D", "[", 
+   RowBox[{"f_", ",", "l_"}], "]"}], ":=", " ", 
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"-", "l"}]], 
+   RowBox[{"NSum", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"f", "[", "i", "]"}], "//", "N"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "0", ",", "1", ",", 
+       SuperscriptBox["2", 
+        RowBox[{"-", "l"}]]}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"interiorIntegrate2D", "[", 
+   RowBox[{"f_", ",", "lx_", ",", "ly_"}], "]"}], ":=", " ", 
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"-", "lx"}]], 
+   RowBox[{"NSum", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"f", "[", 
+       RowBox[{"i", ",", "j"}], "]"}], "//", "N"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"i", ",", "0", ",", "1", ",", 
+       SuperscriptBox["2", 
+        RowBox[{"-", "lx"}]]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"j", ",", "0", ",", "1", ",", 
+       SuperscriptBox["2", 
+        RowBox[{"-", "ly"}]]}], "}"}]}], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.673711226216495*^9, 3.673711256012628*^9}, {
+  3.673711324194332*^9, 3.673711337455922*^9}, {3.673711439570253*^9, 
+  3.673711460233259*^9}, {3.6737134626029253`*^9, 3.673713481078763*^9}, {
+  3.673713780713039*^9, 3.6737137963891563`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"interiorIntegrate1D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", "#", "]"}], "&"}], ",", "16"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"interiorIntegrate2D", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{"#1", "+", "#2"}], "]"}], "&"}], ",", "6", ",", "6"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"NIntegrate", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.673711257598875*^9, 3.673711260890192*^9}, {
+  3.673711374152246*^9, 3.6737113849281054`*^9}, {3.673711463162735*^9, 
+  3.67371149098529*^9}, {3.6737138039652557`*^9, 3.673713821131936*^9}}],
+
+Cell[BoxData["0.4597041140370712`"], "Output",
+ CellChangeTimes->{{3.673711357170622*^9, 3.67371138537708*^9}, {
+  3.673711455299241*^9, 3.6737114912803993`*^9}, {3.673713801734847*^9, 
+  3.6737138214074497`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SequenceLimit", "::", "seqlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The general form of the sequence could not be determined, \
+and the result may be incorrect.\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.673713818759881*^9, 3.673713821843543*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SequenceLimit", "::", "seqlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The general form of the sequence could not be determined, \
+and the result may be incorrect.\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.673713818759881*^9, 3.673713821913322*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"SequenceLimit", "::", "seqlim"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The general form of the sequence could not be determined, \
+and the result may be incorrect.\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.673713818759881*^9, 3.6737138220439997`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"SequenceLimit\\\", \\\"::\\\", \
+\\\"seqlim\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during \
+this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.673713818759881*^9, 3.6737138220723143`*^9}}],
+
+Cell[BoxData["9.615832653660691`"], "Output",
+ CellChangeTimes->{{3.673711357170622*^9, 3.67371138537708*^9}, {
+  3.673711455299241*^9, 3.6737114912803993`*^9}, {3.673713801734847*^9, 
+  3.6737138244266253`*^9}}],
+
+Cell[BoxData["0.45969769413186073`"], "Output",
+ CellChangeTimes->{{3.673711357170622*^9, 3.67371138537708*^9}, {
+  3.673711455299241*^9, 3.6737114912803993`*^9}, {3.673713801734847*^9, 
+  3.673713824438504*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 651},
+WindowMargins->{{Automatic, 69}, {-33, Automatic}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 433, 6, 65, "Chapter"],
+Cell[1016, 30, 1310, 37, 57, "Input"],
+Cell[CellGroupData[{
+Cell[2351, 71, 730, 19, 63, "Input"],
+Cell[3084, 92, 213, 3, 28, "Output"],
+Cell[3300, 97, 314, 7, 24, "Message"],
+Cell[3617, 106, 314, 7, 24, "Message"],
+Cell[3934, 115, 316, 7, 24, "Message"],
+Cell[4253, 124, 596, 12, 24, "Message"],
+Cell[4852, 138, 212, 3, 28, "Output"],
+Cell[5067, 143, 212, 3, 28, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
