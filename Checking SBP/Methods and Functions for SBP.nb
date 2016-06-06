@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     72628,       1887]
-NotebookOptionsPosition[     71131,       1832]
-NotebookOutlinePosition[     71487,       1848]
-CellTagsIndexPosition[     71444,       1845]
+NotebookDataLength[     72412,       1880]
+NotebookOptionsPosition[     70955,       1826]
+NotebookOutlinePosition[     71311,       1842]
+CellTagsIndexPosition[     71268,       1839]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1409,7 +1409,7 @@ Cell[BoxData[{
        RowBox[{
         SuperscriptBox["2", 
          RowBox[{"kx", "-", "lx"}]], "i"}]}], "]"}], ",", "0"}], "]"}]}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"showFullWeights", "[", 
@@ -1486,13 +1486,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.674214215951852*^9, 3.674214236340961*^9}, {
   3.674214267738717*^9, 3.674214293639688*^9}, {3.674214339125592*^9, 
   3.674214342627858*^9}, {3.6742149617240562`*^9, 3.674214971859111*^9}, {
-  3.6742150632155437`*^9, 3.674215088826158*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"showSparseWeights", "[", "10", "]"}], "//", 
-  "MatrixPlot"}]], "Input",
- CellChangeTimes->{{3.674215113411146*^9, 3.674215152020671*^9}}]
+  3.6742150632155437`*^9, 3.674215088826158*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1849,7 +1843,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 110, 1, 44, "Subsection"],
-Cell[693, 25, 9260, 236, 499, "Input"]
+Cell[693, 25, 9260, 236, 465, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[9990, 266, 176, 2, 44, "Subsection"],
@@ -1882,12 +1876,11 @@ Cell[47345, 1200, 7313, 183, 456, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[54695, 1388, 316, 4, 44, "Subsection"],
-Cell[55014, 1394, 3311, 94, 235, "Input"],
-Cell[58328, 1490, 173, 4, 28, "Input"]
+Cell[55014, 1394, 3311, 94, 235, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58538, 1499, 271, 3, 44, "Subsection"],
-Cell[58812, 1504, 12303, 325, 791, "Input"]
+Cell[58362, 1493, 271, 3, 44, "Subsection"],
+Cell[58636, 1498, 12303, 325, 791, "Input"]
 }, Open  ]]
 }
 ]
