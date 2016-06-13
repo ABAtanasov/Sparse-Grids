@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     41674,       1010]
-NotebookOptionsPosition[     40226,        964]
-NotebookOutlinePosition[     40584,        980]
-CellTagsIndexPosition[     40541,        977]
+NotebookDataLength[    124838,       2515]
+NotebookOptionsPosition[    122214,       2441]
+NotebookOutlinePosition[    122572,       2457]
+CellTagsIndexPosition[    122529,       2454]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -616,7 +616,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752231670471*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -634,7 +635,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.6745578002778673`*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522318188066`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -652,7 +654,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.67455780034754*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752231891574*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -667,15 +670,28 @@ ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
 \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800373742*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752231931868*^9}],
 
-Cell[BoxData["$Aborted"], "Output",
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.12733`", ",", "0.303931`", ",", "0.534391`", ",", "2.437979`", ",", 
+   "5.047653`", ",", "4.992359`", ",", "5.019813`", ",", "5.070873`"}], 
+  "}"}]], "Output",
  CellChangeTimes->{3.67449468837923*^9, 3.674494725015419*^9, 
-  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9}],
+  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9, 
+  3.674752255092349*^9}],
 
-Cell[BoxData["$Aborted"], "Output",
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.019719`", ",", "0.018001`", ",", "5.083668`", ",", "5.063317`", ",", 
+   "5.047594`", ",", "5.026886`", ",", "5.122488`", ",", "5.219954`"}], 
+  "}"}]], "Output",
  CellChangeTimes->{3.67449468837923*^9, 3.674494725015419*^9, 
-  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802901778*^9}],
+  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9, 
+  3.674752285681815*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -694,7 +710,8 @@ non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557802960496*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752285830697*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -713,7 +730,8 @@ non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557802968358*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752285900094*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -733,7 +751,8 @@ to non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803002335*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752285922123*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -748,16 +767,18 @@ ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
 \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803036407*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752285938393*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.029329`", ",", "0.057277`", ",", "0.003813`", ",", "0.005901`", ",", 
-   "0.010449`", ",", "0.020712`", ",", "0.033204`", ",", "0.064216`"}], 
+  "0.040732`", ",", "0.06915`", ",", "0.004369`", ",", "0.00702`", ",", 
+   "0.011865`", ",", "0.032081`", ",", "0.044715`", ",", "0.082922`"}], 
   "}"}]], "Output",
  CellChangeTimes->{3.67449468837923*^9, 3.674494725015419*^9, 
-  3.674495302462453*^9, 3.674557760428936*^9, 3.674557803303919*^9}],
+  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9, 
+  3.674752286211817*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -776,7 +797,8 @@ non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.67455780333677*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752286245681*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -795,7 +817,8 @@ non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803372719*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752286279105*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -815,7 +838,8 @@ to non-numerical values for all sampling points in the region with boundaries \
 ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
 ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803402583*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522863195972`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -830,16 +854,18 @@ ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
 \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803424037*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522863825607`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.030427`", ",", "0.058036`", ",", "0.003763`", ",", "0.00588`", ",", 
-   "0.01143`", ",", "0.016396`", ",", "0.030803`", ",", "0.064542`"}], 
+  "0.03693`", ",", "0.079884`", ",", "0.004176`", ",", "0.008548`", ",", 
+   "0.012535`", ",", "0.01782`", ",", "0.034648`", ",", "0.120745`"}], 
   "}"}]], "Output",
  CellChangeTimes->{3.67449468837923*^9, 3.674494725015419*^9, 
-  3.674495302462453*^9, 3.674557760428936*^9, 3.6745578036794453`*^9}],
+  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9, 
+  3.6747522867809467`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -857,7 +883,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803757454*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522868671293`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -875,7 +902,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.6745578038528337`*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522869759417`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -893,7 +921,8 @@ cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
 ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
 \\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.6745578039231787`*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.6747522870554667`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -908,11 +937,1459 @@ ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
 \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
  CellChangeTimes->{3.674494679627309*^9, 3.674494724677187*^9, 
-  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557803950943*^9}],
+  3.674495294910076*^9, 3.6745577569835176`*^9, 3.674557800174617*^9, 
+  3.674752287084815*^9}],
 
-Cell[BoxData["$Aborted"], "Output",
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.115251`", ",", "0.317772`", ",", "0.577329`", ",", "2.616755`", ",", 
+   "4.91217`", ",", "5.008273`", ",", "5.025811`", ",", "5.070031`"}], 
+  "}"}]], "Output",
  CellChangeTimes->{3.67449468837923*^9, 3.674494725015419*^9, 
-  3.674495302462453*^9, 3.674557760428936*^9, 3.674557808683876*^9}]
+  3.674495302462453*^9, 3.674557760428936*^9, 3.674557802338648*^9, 
+  3.674752310546877*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"Sqrt", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"test", "[", "x", "]"}], "-", 
+           RowBox[{"#", "[", "x", "]"}]}], ")"}], "^", "2"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+        RowBox[{"PrecisionGoal", "\[Rule]", " ", "2"}]}], "]"}], "&"}], "@", 
+     RowBox[{"sparseProject", "[", 
+      RowBox[{"test", ",", "n"}], "]"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "4"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6747521694191732`*^9, 3.6747521765661697`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752202741273*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752202776574*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522028075953`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"Function\\\", \\\"::\\\", \\\"slotn\\\
+\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522028171473`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752202885211*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752202956812*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752203029521*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"pkspec1\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed \
+during this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752203057879*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752203198835*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752203260936*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522033252087`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"NIntegrate\\\", \\\"::\\\", \\\"inumr\
+\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752203356846*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752205826425*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522058749847`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Function", "::", "slotn"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Slot number \[NoBreak]\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\
+\[NoBreak] in \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"diag\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], \
+RowBox[{RowBox[{\\\"Length\\\", \\\"[\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}]}]}], \
+\\\")\\\"}]}], \\\"&\\\"}]\\)\[NoBreak] cannot be filled from \
+\[NoBreak]\\!\\(\\*RowBox[{RowBox[{\\\"(\\\", \
+RowBox[{RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", RowBox[{\\\"diag\\\", \
+\\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{RowBox[{\\\"Length\\\", \
+\\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"]\\\"}], \\\"-\\\", \\\"2\\\"}]], \
+RowBox[{\\\"(\\\", RowBox[{UnderoverscriptBox[\\\"\[Sum]\\\", \
+RowBox[{\\\"perp\\\", \\\"=\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]}], RowBox[{\\\
+\"endperp\\\", \\\"[\\\", \\\"diag\\\", \\\"]\\\"}]], \
+RowBox[{RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"{\\\
+\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\
+\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \
+\\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\
+\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"{\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\
+\[RightSkeleton]\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", RowBox[{\\\
+\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]}], \\\"}\\\"}], \\\"\[LeftDoubleBracket]\\\", \
+RowBox[{RowBox[{\\\"diag\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"perp\\\", \\\"+\\\", \\\"2\\\"}], \\\",\\\", \
+RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+RowBox[{\\\"switch\\\", \\\"[\\\", RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}], \\\"]\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \
+\\\"[\\\", RowBox[{\\\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"\[RightDoubleBracket]\\\"}], \\\" \\\", RowBox[{RowBox[{\\\
+\"\[Phi]\\\", \\\"[\\\", RowBox[{RowBox[{\\\"getrow\\\", \\\"[\\\", \
+RowBox[{\\\"perp\\\", \\\",\\\", \\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"perp\\\", \\\",\\\", \
+\\\"diag\\\"}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", \
+RowBox[{\\\"#1\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\
+\\\"}]}], \\\"]\\\"}], \\\",\\\", RowBox[{\\\"ceil\\\", \\\"[\\\", RowBox[{\\\
+\"#2\\\", \\\",\\\", RowBox[{\\\"switch\\\", \\\"[\\\", \
+RowBox[{\\\"getcol\\\", \\\"[\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"2\\\", \\\"\[RightSkeleton]\\\"}], \\\"]\\\"}], \\\"]\\\"}]}], \
+\\\"]\\\"}]}], \\\"]\\\"}], \\\"[\\\", RowBox[{\\\"#1\\\", \\\",\\\", \
+\\\"#2\\\"}], \\\"]\\\"}]}]}], \\\")\\\"}]}], \\\"&\\\"}], \\\")\\\"}], \\\"[\
+\\\", \\\"x\\\", \\\"]\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Function/slotn\\\", ButtonNote -> \
+\\\"Function::slotn\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752205884762*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"Function\\\", \\\"::\\\", \\\"slotn\\\
+\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752205924762*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752205989422*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.67475220606188*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "pkspec1"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The expression \[NoBreak]\\!\\(\\*RowBox[{\\\"If\\\", \
+\\\"[\\\", RowBox[{RowBox[{\\\"x\\\", \\\"\[GreaterEqual]\\\", \\\"1\\\"}], \
+\\\",\\\", SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+\\\"1\\\"}]], \\\",\\\", RowBox[{\\\"1\\\", \\\"+\\\", RowBox[{\\\"Floor\\\", \
+\\\"[\\\", RowBox[{SuperscriptBox[\\\"2\\\", RowBox[{\\\"1\\\", \\\"-\\\", \\\
+\"1\\\"}]], \\\" \\\", \\\"x\\\"}], \\\"]\\\"}]}]}], \\\"]\\\"}]\\)\[NoBreak] \
+cannot be used as a part specification. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/Part\\\", ButtonNote -> \
+\\\"Part::pkspec1\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522061377783`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"Part\\\", \\\"::\\\", \
+\\\"pkspec1\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed \
+during this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522061803637`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752206271517*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6747522063466053`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\*SuperscriptBox[RowBox[{\\\
+\"(\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\")\\\"}], \\\"2\\\"]\\)\[NoBreak] has \
+evaluated to non-numerical values for all sampling points in the region with \
+boundaries \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}], \\\",\\\", RowBox[{\\\
+\"{\\\", RowBox[{\\\"0\\\", \\\",\\\", \\\"1\\\"}], \\\"}\\\"}]}], \
+\\\"}\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752206525749*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"NIntegrate\\\", \\\"::\\\", \\\"inumr\
+\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.674752206555327*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"\[Sqrt]", 
+            RowBox[{"NIntegrate", "[", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"test", "[", "x", "]"}], "-", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"diag", "=", 
+                    RowBox[{"-", "1"}]}], 
+                    RowBox[{
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                    Background -> GrayLevel[0.75], 
+                    BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                    "-", "2"}]], 
+                    RowBox[{"(", 
+                    RowBox[{
+                    UnderoverscriptBox["\[Sum]", 
+                    RowBox[{"perp", "=", 
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{"\" \[CenterEllipsis]\"", #, 
+                    "\"\[CenterEllipsis] \""}], Background -> GrayLevel[0.75],
+                     BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )]}], 
+                    RowBox[{"endperp", "[", "diag", "]"}]], 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"{", 
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{"\" \[CenterEllipsis]\"", #, 
+                    "\"\[CenterEllipsis] \""}], Background -> GrayLevel[0.75],
+                     BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                    "}"}], "\[LeftDoubleBracket]", 
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{"\" \[CenterEllipsis]\"", #, 
+                    "\"\[CenterEllipsis] \""}], Background -> GrayLevel[0.75],
+                     BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                    "\[RightDoubleBracket]"}], " ", 
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{"\" \[CenterEllipsis]\"", #, 
+                    "\"\[CenterEllipsis] \""}], Background -> GrayLevel[0.75],
+                     BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 
+                    7]& )]}]}], ")"}]}], "&"}], ")"}], "[", "x", "]"}]}], 
+                ")"}], "2"], ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+              RowBox[{"PrecisionGoal", "\[Rule]", "2"}]}], "]"}]}], ",", 
+           SqrtBox[
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+               Background -> GrayLevel[0.75], 
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> 1, FrameStyle -> 
+               GrayLevel[0.75], RoundingRadius -> 7]& )]], ",", 
+           SqrtBox[
+            RowBox[{"NIntegrate", "[", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                TemplateBox[{"1"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                   FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                ")"}], "2"], ",", 
+              RowBox[{"{", 
+               TemplateBox[{"1"},
+                "OutputSizeLimit`Skeleton",
+                DisplayFunction->(FrameBox[
+                  
+                  RowBox[{
+                   "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                  Background -> GrayLevel[0.75], 
+                  BaseStyle -> {
+                   "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                  Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                  FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+               "}"}], ",", 
+              TemplateBox[{"1"},
+               "OutputSizeLimit`Skeleton",
+               DisplayFunction->(FrameBox[
+                 
+                 RowBox[{
+                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                 Background -> GrayLevel[0.75], 
+                 BaseStyle -> {
+                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                   ShowStringCharacters -> False}, BaselinePosition -> 
+                 Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                 FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], ",", 
+              RowBox[{"PrecisionGoal", "\[Rule]", "2"}]}], "]"}]], ",", 
+           RowBox[{"\[Sqrt]", 
+            RowBox[{"NIntegrate", "[", 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"test", "[", "x", "]"}], "-", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                    Background -> GrayLevel[0.75], 
+                    BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                    RowBox[{"(", 
+                    TemplateBox[{"1"},
+                    "OutputSizeLimit`Skeleton",
+                    DisplayFunction->(FrameBox[
+                    
+                    RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                    Background -> GrayLevel[0.75], 
+                    BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                    Baseline, ContentPadding -> False, FrameMargins -> 1, 
+                    FrameStyle -> GrayLevel[0.75], RoundingRadius -> 7]& )], 
+                    ")"}]}], "&"}], ")"}], "[", "x", "]"}]}], ")"}], "2"], 
+              ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", "0", ",", "1"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+              RowBox[{"PrecisionGoal", "\[Rule]", "2"}]}], "]"}]}]}], "}"}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{49., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 939, 26439102943264750682, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{54., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 939, 26439102943264750682, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{40., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            Identity, 939, 26439102943264750682, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{72., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[939]]], "Output",
+ CellChangeTimes->{3.674752206934758*^9}]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -987,30 +2464,58 @@ Cell[10807, 282, 7228, 199, 410, "Input"]
 Cell[CellGroupData[{
 Cell[18072, 486, 208, 3, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[18305, 493, 4305, 107, 284, "Input"],
-Cell[22613, 602, 938, 16, 30, "Message"],
-Cell[23554, 620, 940, 16, 30, "Message"],
-Cell[24497, 638, 937, 16, 30, "Message"],
-Cell[25437, 656, 655, 13, 24, "Message"],
-Cell[26095, 671, 167, 2, 28, "Output"],
-Cell[26265, 675, 167, 2, 28, "Output"],
-Cell[26435, 679, 1062, 17, 42, "Message"],
-Cell[27500, 698, 1062, 17, 42, "Message"],
-Cell[28565, 717, 1160, 18, 42, "Message"],
-Cell[29728, 737, 659, 13, 24, "Message"],
-Cell[30390, 752, 339, 7, 28, "Output"],
-Cell[30732, 761, 1061, 17, 42, "Message"],
-Cell[31796, 780, 1062, 17, 42, "Message"],
-Cell[32861, 799, 1160, 18, 42, "Message"],
-Cell[34024, 819, 659, 13, 24, "Message"],
-Cell[34686, 834, 339, 7, 28, "Output"],
-Cell[35028, 843, 938, 16, 30, "Message"],
-Cell[35969, 861, 940, 16, 30, "Message"],
-Cell[36912, 879, 940, 16, 30, "Message"],
-Cell[37855, 897, 655, 13, 24, "Message"],
-Cell[38513, 912, 167, 2, 28, "Output"]
+Cell[18305, 493, 4305, 107, 267, "Input"],
+Cell[22613, 602, 963, 17, 30, "Message"],
+Cell[23579, 621, 965, 17, 30, "Message"],
+Cell[24547, 640, 963, 17, 30, "Message"],
+Cell[25513, 659, 680, 14, 24, "Message"],
+Cell[26196, 675, 363, 8, 28, "Output"],
+Cell[26562, 685, 364, 8, 28, "Output"],
+Cell[26929, 695, 1087, 18, 42, "Message"],
+Cell[28019, 715, 1087, 18, 42, "Message"],
+Cell[29109, 735, 1185, 19, 42, "Message"],
+Cell[30297, 756, 684, 14, 24, "Message"],
+Cell[30984, 772, 362, 8, 28, "Output"],
+Cell[31349, 782, 1087, 18, 42, "Message"],
+Cell[32439, 802, 1087, 18, 42, "Message"],
+Cell[33529, 822, 1187, 19, 42, "Message"],
+Cell[34719, 843, 686, 14, 24, "Message"],
+Cell[35408, 859, 364, 8, 28, "Output"],
+Cell[35775, 869, 965, 17, 30, "Message"],
+Cell[36743, 888, 965, 17, 30, "Message"],
+Cell[37711, 907, 965, 17, 30, "Message"],
+Cell[38679, 926, 680, 14, 24, "Message"],
+Cell[39362, 942, 363, 8, 28, "Output"]
 }, Open  ]],
-Cell[38695, 917, 1515, 44, 131, "Input"]
+Cell[CellGroupData[{
+Cell[39762, 955, 807, 22, 46, "Input"],
+Cell[40572, 979, 8270, 121, 283, "Message"],
+Cell[48845, 1102, 8270, 121, 283, "Message"],
+Cell[57118, 1225, 8272, 121, 283, "Message"],
+Cell[65393, 1348, 566, 12, 24, "Message"],
+Cell[65962, 1362, 845, 15, 30, "Message"],
+Cell[66810, 1379, 845, 15, 30, "Message"],
+Cell[67658, 1396, 845, 15, 30, "Message"],
+Cell[68506, 1413, 562, 12, 24, "Message"],
+Cell[69071, 1427, 908, 16, 44, "Message"],
+Cell[69982, 1445, 908, 16, 44, "Message"],
+Cell[70893, 1463, 910, 16, 44, "Message"],
+Cell[71806, 1481, 566, 12, 24, "Message"],
+Cell[72375, 1495, 8270, 121, 283, "Message"],
+Cell[80648, 1618, 8272, 121, 283, "Message"],
+Cell[88923, 1741, 8270, 121, 283, "Message"],
+Cell[97196, 1864, 564, 12, 24, "Message"],
+Cell[97763, 1878, 845, 15, 30, "Message"],
+Cell[98611, 1895, 844, 15, 30, "Message"],
+Cell[99458, 1912, 847, 15, 30, "Message"],
+Cell[100308, 1929, 564, 12, 24, "Message"],
+Cell[100875, 1943, 908, 16, 44, "Message"],
+Cell[101786, 1961, 910, 16, 44, "Message"],
+Cell[102699, 1979, 908, 16, 44, "Message"],
+Cell[103610, 1997, 566, 12, 24, "Message"],
+Cell[104179, 2011, 16489, 380, 246, "Output"]
+}, Open  ]],
+Cell[120683, 2394, 1515, 44, 131, "Input"]
 }, Open  ]]
 }
 ]

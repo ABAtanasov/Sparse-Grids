@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     59507,       1457]
-NotebookOptionsPosition[     58279,       1411]
-NotebookOutlinePosition[     58637,       1427]
-CellTagsIndexPosition[     58594,       1424]
+NotebookDataLength[     62201,       1528]
+NotebookOptionsPosition[     60815,       1477]
+NotebookOutlinePosition[     61173,       1493]
+CellTagsIndexPosition[     61130,       1490]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,13 +21,13 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["\<\
-This shows that there is definitely an optimal way to reconstruct a function. \
+This shows that there is definitely a better way to reconstruct a function. \
 In particular, we should use Reconstruct over Reconstruct2 and plot it in the \
 way that generates times5. \
 \>", "Chapter",
  CellChangeTimes->{{3.673179147328442*^9, 3.673179159427843*^9}, {
   3.673179255225525*^9, 3.673179280653989*^9}, {3.673349772409474*^9, 
-  3.673349774794972*^9}}],
+  3.673349774794972*^9}, {3.6748309220229177`*^9, 3.6748309230539417`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -801,22 +801,22 @@ Cell[BoxData[{
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.008208`", ",", "0.009539`", ",", "0.008986`", ",", "0.010989`", ",", 
-   "0.013745`", ",", "0.023039`", ",", "0.038354`", ",", "0.071066`", ",", 
-   "0.148901`", ",", "0.303334`", ",", "0.629705`", ",", "1.246374`", ",", 
-   "2.573567`", ",", "5.117834`"}], "}"}]], "Output",
+  "0.008106`", ",", "0.007708`", ",", "0.010169`", ",", "0.010084`", ",", 
+   "0.013338`", ",", "0.022252`", ",", "0.04332`", ",", "0.078437`", ",", 
+   "0.156047`", ",", "0.319464`", ",", "0.632728`", ",", "1.285416`", ",", 
+   "2.571126`", ",", "5.154377`"}], "}"}]], "Output",
  CellChangeTimes->{3.674494291308364*^9, 3.674494412393471*^9, 
-  3.6744952478852386`*^9}],
+  3.6744952478852386`*^9, 3.6747548310579643`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-  "0.012202`", ",", "0.012855`", ",", "0.020835`", ",", "0.037852`", ",", 
-   "0.049373`", ",", "0.059358`", ",", "0.085875`", ",", "0.122033`", ",", 
-   "0.194481`", ",", "0.333989`", ",", "0.515664`", ",", "0.760034`", ",", 
-   "1.265646`", ",", "2.227667`"}], "}"}]], "Output",
+  "0.01411`", ",", "0.012255`", ",", "0.023668`", ",", "0.039085`", ",", 
+   "0.053849`", ",", "0.068125`", ",", "0.093657`", ",", "0.131175`", ",", 
+   "0.218219`", ",", "0.373137`", ",", "0.515735`", ",", "0.770106`", ",", 
+   "1.281213`", ",", "2.253506`"}], "}"}]], "Output",
  CellChangeTimes->{3.674494291308364*^9, 3.674494412393471*^9, 
-  3.674495253636033*^9}]
+  3.6744952478852386`*^9, 3.674754837017447*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1405,6 +1405,72 @@ Cell[BoxData[
   3.673349879100708*^9, {3.674493785090143*^9, 3.674493809808483*^9}, {
    3.674494238041333*^9, 3.674494295648651*^9}, {3.674494341653923*^9, 
    3.674494349654991*^9}, 3.674494421966172*^9, 3.6744952610111513`*^9}]
+}, Open  ]],
+
+Cell["\<\
+The most malleable and efficient way would be #4 (even though it looks like \
+#5 gets even better later)\
+\>", "Text",
+ CellChangeTimes->{{3.6747541880207253`*^9, 3.674754196722228*^9}, {
+  3.674754230698113*^9, 3.6747542412462807`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Log2", "[", 
+      RowBox[{"times5", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], "]"}], "-", 
+     RowBox[{"Log2", "[", 
+      RowBox[{"times5", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", "-", "1"}], "]"}], "]"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "2", ",", "10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.674754790100795*^9, 3.674754834984315*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{1., -0.20334750373042443`}, {2., 0.9495673159958118}, {3., 
+      0.7236772375711409}, {4., 0.4623045157547594}, {5., 
+      0.3392647712504617}, {6., 0.45920250191646783`}, {7., 
+      0.48603405817469003`}, {8., 0.7342839304361424}, {9., 
+      0.7739287034469631}}]}, {}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0., 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 9.}, {-0.20334750373042443`, 0.9495673159958118}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{3.67475480553476*^9, 3.674754838275366*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -1427,35 +1493,40 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 378, 7, 197, "Chapter"],
+Cell[580, 22, 426, 7, 197, "Chapter"],
 Cell[CellGroupData[{
-Cell[983, 33, 110, 1, 44, "Subsection"],
-Cell[1096, 36, 10059, 254, 522, "Input"],
-Cell[11158, 292, 3823, 92, 220, "Input"],
-Cell[14984, 386, 7262, 201, 410, "Input"]
+Cell[1031, 33, 110, 1, 44, "Subsection"],
+Cell[1144, 36, 10059, 254, 522, "Input"],
+Cell[11206, 292, 3823, 92, 220, "Input"],
+Cell[15032, 386, 7262, 201, 410, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22283, 592, 151, 2, 44, "Subsection"],
+Cell[22331, 592, 151, 2, 44, "Subsection"],
 Cell[CellGroupData[{
-Cell[22459, 598, 4090, 105, 216, "Input"],
-Cell[26552, 705, 385, 8, 28, "Output"],
-Cell[26940, 715, 387, 8, 28, "Output"],
-Cell[27330, 725, 388, 8, 28, "Output"],
-Cell[27721, 735, 422, 8, 46, "Output"],
-Cell[28146, 745, 424, 8, 46, "Output"]
+Cell[22507, 598, 4090, 105, 216, "Input"],
+Cell[26600, 705, 385, 8, 28, "Output"],
+Cell[26988, 715, 387, 8, 28, "Output"],
+Cell[27378, 725, 388, 8, 28, "Output"],
+Cell[27769, 735, 422, 8, 46, "Output"],
+Cell[28194, 745, 424, 8, 46, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28607, 758, 1375, 40, 114, "Input"],
-Cell[29985, 800, 411, 8, 46, "Output"],
-Cell[30399, 810, 409, 8, 46, "Output"]
+Cell[28655, 758, 1375, 40, 114, "Input"],
+Cell[30033, 800, 434, 8, 46, "Output"],
+Cell[30470, 810, 432, 8, 46, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30845, 823, 739, 21, 63, "Input"],
-Cell[31587, 846, 299, 7, 28, "Output"]
+Cell[30939, 823, 739, 21, 46, "Input"],
+Cell[31681, 846, 299, 7, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[31923, 858, 344, 9, 28, "Input"],
-Cell[32270, 869, 25969, 537, 236, "Output"]
+Cell[32017, 858, 344, 9, 28, "Input"],
+Cell[32364, 869, 25969, 537, 236, "Output"]
+}, Open  ]],
+Cell[58348, 1409, 247, 5, 30, "Text"],
+Cell[CellGroupData[{
+Cell[58620, 1418, 497, 14, 28, "Input"],
+Cell[59120, 1434, 1655, 38, 232, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
