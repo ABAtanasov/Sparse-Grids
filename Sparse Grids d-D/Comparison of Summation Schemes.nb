@@ -1,0 +1,234 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7722,        226]
+NotebookOptionsPosition[      7204,        203]
+NotebookOutlinePosition[      7563,        219]
+CellTagsIndexPosition[      7520,        216]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"findSum", "[", 
+    RowBox[{"f_", ",", "stepsize_", ",", "d_"}], "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"d", "\[Equal]", "1"}], ",", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"f", "[", "i", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "0", ",", "1", ",", "stepsize"}], "}"}]}], "]"}], 
+     ",", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"findSum", "[", 
+        RowBox[{
+         RowBox[{"proj", "[", 
+          RowBox[{"f", ",", "i"}], "]"}], ",", "stepsize", ",", 
+         RowBox[{"d", "-", "1"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "0", ",", "1", ",", "stepsize"}], "}"}]}], "]"}]}], 
+    "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"totalSum", "[", 
+   RowBox[{"f_", ",", "stepsize_", ",", "d_"}], "]"}], ":=", 
+  RowBox[{
+   SuperscriptBox["stepsize", "d"], " ", 
+   RowBox[{"findSum", "[", 
+    RowBox[{"f", ",", "stepsize", ",", "d"}], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.674961097187071*^9, 3.674961173845438*^9}, {
+  3.674961311878744*^9, 3.674961426722023*^9}, {3.674961491028069*^9, 
+  3.6749614924798813`*^9}, {3.674961583731385*^9, 3.674961633302487*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"explicitSum", "[", 
+   RowBox[{"f_", ",", "stepsize_", ",", "d_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["stepsize", "d"], 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       RowBox[{"f", "@@", "x"}], ",", "##"}], "]"}]}], "&"}], "@@", 
+   RowBox[{"Sequence", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "[", "i", "]"}], ",", "0", ",", "1", ",", "stepsize"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"i", ",", "1", ",", "d"}], "}"}]}], "]"}], 
+    "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Use", " ", "this", " ", "one"}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.674991937171482*^9, 3.6749920068787107`*^9}, {
+  3.674992038547482*^9, 3.67499204251678*^9}, {3.674992126077627*^9, 
+  3.674992128040483*^9}, {3.674992283460898*^9, 3.674992311727092*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"1", "/", 
+            RowBox[{"n", "^", "2"}]}], " ", 
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{"i", "+", 
+              RowBox[{"j", "^", "2"}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "0", ",", "1", ",", 
+               RowBox[{"1", "/", "n"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"j", ",", "0", ",", "1", ",", 
+               RowBox[{"1", "/", "n"}]}], "}"}]}], "]"}]}], "//", "Timing"}], 
+         ")"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "100", ",", "500", ",", "50"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"explicitSum", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"#", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "+", 
+              RowBox[{
+               RowBox[{"#", "[", 
+                RowBox[{"[", "2", "]"}], "]"}], "^", "2"}]}], "&"}], ",", 
+            RowBox[{"1", "/", "n"}], ",", "2"}], "]"}], "//", "Timing"}], 
+         ")"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"n", ",", "100", ",", "500", ",", "50"}], "}"}]}], "]"}]}], 
+    "}"}], "//", "Log2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.674991732200664*^9, 3.674991825072171*^9}, {
+  3.6749918615870533`*^9, 3.674991913098179*^9}, {3.6749920535669737`*^9, 
+  3.67499207753555*^9}, {3.6749940992904167`*^9, 3.6749941269073563`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{1., -5.702599605921446}, {2., -4.423866825426744}, {
+      3., -3.6223053953934508`}, {4., -2.9113047750559318`}, {
+      5., -2.3600677322031807`}, {6., -1.928792003247533}, {
+      7., -1.535156111246598}, {8., -1.1555115018939894`}, {
+      9., -0.9173519044294463}}]}, 
+    {RGBColor[0.880722, 0.611041, 0.142051], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{1., -5.58921605923638}, {2., -4.59589908237807}, {
+      3., -3.6581371858703173`}, {4., -3.041351800166439}, {
+      5., -2.5195115101994885`}, {6., -2.0247425489134745`}, {
+      7., -1.675710127797733}, {8., -1.293390767196912}, {
+      9., -1.024578181367552}}]}, {}}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0., 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 9.}, {-5.702599605921446, 0}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.02]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.674991793992426*^9, 3.674991809288898*^9}, {
+   3.674991889823247*^9, 3.674991915095868*^9}, 3.674992082496003*^9, 
+   3.674992132273488*^9, {3.674994076885274*^9, 3.674994131320253*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"explicitSum", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"#1", "+", 
+     RowBox[{"#2", "^", "2"}]}], "&"}], ",", 
+   RowBox[{"1", "/", "300"}], ",", "2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.674994869901677*^9, 3.674994889287655*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"90601", " ", "x"}], "90000"]], "Output",
+ CellChangeTimes->{{3.674994873617375*^9, 3.674994889774763*^9}}]
+}, Open  ]]
+},
+WindowSize->{808, 651},
+WindowMargins->{{Automatic, 125}, {Automatic, 24}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
+2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1256, 33, 99, "Input"],
+Cell[1817, 55, 928, 26, 65, "Input"],
+Cell[CellGroupData[{
+Cell[2770, 85, 1790, 49, 80, "Input"],
+Cell[4563, 136, 2179, 47, 241, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6779, 188, 261, 7, 28, "Input"],
+Cell[7043, 197, 145, 3, 82, "Output"]
+}, Open  ]]
+}
+]
+*)
+

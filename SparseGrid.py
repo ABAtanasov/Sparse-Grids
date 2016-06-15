@@ -148,7 +148,7 @@ class sparseGrid:
       return cross(basis_cur,self.generatePointsRec(dim-1,\
                     level-cur_level+1)) \
                     + self.generatePointsRec(dim,level,cur_level+1)
-  
+   
   def nodal2Hier1D(self,node,i,j,dim):
     """ conversion from nodal to hierarchical basis in one dimension
         (i,j) gives index in this dim current node
