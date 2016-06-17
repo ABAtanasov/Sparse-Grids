@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21586,        574]
-NotebookOptionsPosition[     20432,        531]
-NotebookOutlinePosition[     20788,        547]
-CellTagsIndexPosition[     20745,        544]
+NotebookDataLength[     21726,        578]
+NotebookOptionsPosition[     20534,        534]
+NotebookOutlinePosition[     20890,        550]
+CellTagsIndexPosition[     20847,        547]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -270,6 +270,9 @@ Cell[BoxData[
    "1.253459`", ",", "4.930502`", ",", "19.5331`"}], "}"}]], "Output",
  CellChangeTimes->{3.6749983290731897`*^9}]
 }, Open  ]],
+
+Cell[BoxData["Compile"], "Input",
+ CellChangeTimes->{{3.675007783418079*^9, 3.675007784432032*^9}}],
 
 Cell[CellGroupData[{
 
@@ -555,26 +558,27 @@ Cell[CellGroupData[{
 Cell[9540, 255, 362, 7, 46, InheritFromParent],
 Cell[9905, 264, 304, 6, 46, "Output"]
 }, Open  ]],
+Cell[10224, 273, 99, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[10246, 275, 366, 7, 46, InheritFromParent],
-Cell[10615, 284, 303, 6, 46, "Output"]
+Cell[10348, 278, 366, 7, 46, InheritFromParent],
+Cell[10717, 287, 303, 6, 46, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10955, 295, 1167, 29, 46, "Input"],
-Cell[12125, 326, 279, 6, 28, "Output"],
-Cell[12407, 334, 277, 6, 28, "Output"]
+Cell[11057, 298, 1167, 29, 46, "Input"],
+Cell[12227, 329, 279, 6, 28, "Output"],
+Cell[12509, 337, 277, 6, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12721, 345, 231, 6, 28, "Input"],
-Cell[12955, 353, 1926, 43, 230, "Output"]
+Cell[12823, 348, 231, 6, 28, "Input"],
+Cell[13057, 356, 1926, 43, 230, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14918, 401, 517, 15, 28, "Input"],
-Cell[15438, 418, 4065, 79, 230, "Output"]
+Cell[15020, 404, 517, 15, 28, "Input"],
+Cell[15540, 421, 4065, 79, 230, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19540, 502, 494, 14, 28, "Input"],
-Cell[20037, 518, 379, 10, 28, "Output"]
+Cell[19642, 505, 494, 14, 28, "Input"],
+Cell[20139, 521, 379, 10, 28, "Output"]
 }, Open  ]]
 }
 ]
