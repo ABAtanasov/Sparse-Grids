@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1205337,      20541]
-NotebookOptionsPosition[   1202281,      20443]
-NotebookOutlinePosition[   1202640,      20459]
-CellTagsIndexPosition[   1202597,      20456]
+NotebookDataLength[   1205370,      20542]
+NotebookOptionsPosition[   1202313,      20444]
+NotebookOutlinePosition[   1202672,      20460]
+CellTagsIndexPosition[   1202629,      20457]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -19385,7 +19385,8 @@ Cell[BoxData[
    "1.2535491500634738`*^-8", ",", "3.382568879936559`*^-9"}], 
   "}"}]], "Output",
  CellChangeTimes->{3.6742192486739483`*^9, 3.674220054029406*^9, 
-  3.6742209178674*^9, 3.674226907471292*^9, 3.674300488978265*^9}]
+  3.6742209178674*^9, 3.674226907471292*^9, 3.674300488978265*^9, 
+  3.675423412365799*^9}]
 }, Open  ]],
 
 Cell["Finding the error for a mesh at level 15, for example:", "Text",
@@ -20393,9 +20394,9 @@ Cell[BoxData[
     True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`c$$], 1.9, 2.1}}, Typeset`size$$ = {62., {2., 9.}}, 
-    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`c$99632$$ = 0}, 
+      Hold[$CellContext`c$$], 1.9, 2.1}}, Typeset`size$$ = {
+    360., {118., 123.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`c$99632$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`c$$ = 1.9}, 
       "ControllerVariables" :> {
@@ -20424,7 +20425,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{326., {41., 47.}},
+     ImageSizeCache->{405., {155., 161.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -20516,31 +20517,31 @@ Cell[1152680, 19341, 165, 2, 32, "Output"]
 Cell[1152860, 19346, 119, 1, 30, "Text"],
 Cell[CellGroupData[{
 Cell[1153004, 19351, 1273, 21, 97, "Input"],
-Cell[1154280, 19374, 711, 13, 77, "Output"]
+Cell[1154280, 19374, 736, 14, 111, "Output"]
 }, Open  ]],
-Cell[1155006, 19390, 136, 1, 30, "Text"],
-Cell[1155145, 19393, 1563, 35, 56, "Input"],
-Cell[1156711, 19430, 92, 1, 28, "Input"],
+Cell[1155031, 19391, 136, 1, 30, "Text"],
+Cell[1155170, 19394, 1563, 35, 56, "Input"],
+Cell[1156736, 19431, 92, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[1156828, 19435, 2666, 63, 131, "Input"],
-Cell[1159497, 19500, 13903, 283, 195, "Output"]
+Cell[1156853, 19436, 2666, 63, 131, "Input"],
+Cell[1159522, 19501, 13903, 283, 195, "Output"]
 }, Open  ]],
-Cell[1173415, 19786, 545, 12, 50, "Text"],
-Cell[1173963, 19800, 91, 1, 28, "Input"],
+Cell[1173440, 19787, 545, 12, 50, "Text"],
+Cell[1173988, 19801, 91, 1, 28, "Input"],
 Cell[CellGroupData[{
-Cell[1174079, 19805, 2123, 51, 114, "Input"],
-Cell[1176205, 19858, 1632, 35, 42, "Output"],
-Cell[1177840, 19895, 1370, 32, 42, "Output"]
+Cell[1174104, 19806, 2123, 51, 114, "Input"],
+Cell[1176230, 19859, 1632, 35, 42, "Output"],
+Cell[1177865, 19896, 1370, 32, 42, "Output"]
 }, Open  ]],
-Cell[1179225, 19930, 667, 13, 69, "Text"],
+Cell[1179250, 19931, 667, 13, 69, "Text"],
 Cell[CellGroupData[{
-Cell[1179917, 19947, 3582, 94, 131, "Input"],
-Cell[1183502, 20043, 13822, 280, 205, "Output"]
+Cell[1179942, 19948, 3582, 94, 131, "Input"],
+Cell[1183527, 20044, 13822, 280, 205, "Output"]
 }, Open  ]],
-Cell[1197339, 20326, 681, 12, 125, "Text"],
+Cell[1197364, 20327, 681, 12, 125, "Text"],
 Cell[CellGroupData[{
-Cell[1198045, 20342, 1719, 44, 97, "Input"],
-Cell[1199767, 20388, 2486, 51, 105, "Output"]
+Cell[1198070, 20343, 1719, 44, 97, "Input"],
+Cell[1199792, 20389, 2493, 51, 333, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
