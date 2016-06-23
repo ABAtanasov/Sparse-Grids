@@ -10,14 +10,19 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     76692,       1585]
-NotebookOptionsPosition[     75439,       1542]
-NotebookOutlinePosition[     75797,       1558]
-CellTagsIndexPosition[     75754,       1555]
+NotebookDataLength[     77538,       1617]
+NotebookOptionsPosition[     76055,       1565]
+NotebookOutlinePosition[     76413,       1581]
+CellTagsIndexPosition[     76370,       1578]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["Discontinuous Galerkin Method for Rank 3", "Subsection",
+ CellChangeTimes->{{3.675557290743631*^9, 3.6755573149457006`*^9}}],
+
 Cell[BoxData[
  RowBox[{
   RowBox[{
@@ -408,7 +413,13 @@ Cell[BoxData[{
   3.67553187269112*^9, 3.6755319178076982`*^9}, {3.675535980571948*^9, 
   3.67553598360705*^9}, {3.6755360324551353`*^9, 3.675536093219211*^9}, {
   3.6755416502645817`*^9, 3.675541650421166*^9}, {3.675541960814287*^9, 
-  3.6755419623122473`*^9}, {3.675542011144772*^9, 3.675542023792514*^9}}],
+  3.6755419623122473`*^9}, {3.675542011144772*^9, 3.675542023792514*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Discontinuous Galerkin Method Calculation", "Subsection",
+ CellChangeTimes->{{3.675557290743631*^9, 3.6755573221985283`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -531,8 +542,9 @@ Cell[BoxData[
                  Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[
                RasterBox[
                SparseArray[
@@ -543,9 +555,10 @@ Cell[BoxData[
                 0}, {10, 10}}, {0, 1}], Frame -> False, Axes -> False, 
                AspectRatio -> 1, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-               FrameTicks -> None, FrameStyle -> Directive[
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], Frame -> True, FrameTicks -> None, 
+               FrameStyle -> Directive[
                  Opacity[0.5], 
                  Thickness[Tiny], 
                  RGBColor[0.368417, 0.506779, 0.709798]], 
@@ -586,8 +599,9 @@ Cell[BoxData[
                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
                Alignment -> {Center, Center}, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}]], 
               GraphicsBox[
                RasterBox[
                SparseArray[
@@ -598,9 +612,10 @@ Cell[BoxData[
                 0}, {10, 10}}, {0, 1}], Frame -> False, Axes -> False, 
                AspectRatio -> 1, ImageSize -> 
                Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}], Frame -> True, 
-               FrameTicks -> None, FrameStyle -> Directive[
+                 Automatic, 
+                  3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                   Magnification])}], Frame -> True, FrameTicks -> None, 
+               FrameStyle -> Directive[
                  Opacity[0.5], 
                  Thickness[Tiny], 
                  RGBColor[0.368417, 0.506779, 0.709798]], 
@@ -1463,7 +1478,14 @@ Cell[BoxData[
    "0.00014117975503465314`", ",", "0.000017977183425266127`", ",", 
    "2.3817563637186355`*^-6"}], "}"}]], "Output",
  CellChangeTimes->{3.675542301740541*^9}]
+}, Open  ]]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Error Comparision", "Subsection",
+ CellChangeTimes->{{3.675557290743631*^9, 3.675557297124075*^9}, {
+  3.6755573300437317`*^9, 3.675557334309231*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -1539,6 +1561,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.675542216240638*^9, 3.675542229220318*^9}, 
    3.6755423212793407`*^9}]
 }, Open  ]]
+}, Open  ]]
 },
 WindowSize->{808, 651},
 WindowMargins->{{76, Automatic}, {36, Automatic}},
@@ -1557,35 +1580,44 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 311, 8, 28, "Input"],
-Cell[872, 30, 531, 16, 34, "Input"],
-Cell[1406, 48, 4013, 122, 299, "Input"],
-Cell[5422, 172, 643, 16, 46, "Input"],
-Cell[6068, 190, 1050, 27, 52, "Input"],
-Cell[7121, 219, 995, 27, 53, "Input"],
-Cell[8119, 248, 2470, 60, 228, "Input"],
-Cell[10592, 310, 4166, 100, 308, "Input"],
 Cell[CellGroupData[{
-Cell[14783, 414, 245, 7, 28, "Input"],
-Cell[15031, 423, 1092, 19, 60, "Message"],
-Cell[16126, 444, 1103, 19, 60, "Message"],
-Cell[17232, 465, 627, 12, 60, "Message"],
-Cell[17862, 479, 1102, 19, 60, "Message"],
-Cell[18967, 500, 614, 13, 24, "Message"],
-Cell[19584, 515, 9271, 191, 61, "Output"]
+Cell[580, 22, 130, 1, 44, "Subsection"],
+Cell[713, 25, 311, 8, 28, "Input"],
+Cell[1027, 35, 531, 16, 34, "Input"],
+Cell[1561, 53, 4013, 122, 299, "Input"],
+Cell[5577, 177, 643, 16, 46, "Input"],
+Cell[6223, 195, 1050, 27, 52, "Input"],
+Cell[7276, 224, 995, 27, 53, "Input"],
+Cell[8274, 253, 2470, 60, 228, "Input"],
+Cell[10747, 315, 4166, 100, 308, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28892, 711, 372, 10, 28, "Input"],
-Cell[29267, 723, 41746, 697, 267, "Output"]
+Cell[14950, 420, 131, 1, 44, "Subsection"],
+Cell[CellGroupData[{
+Cell[15106, 425, 245, 7, 28, "Input"],
+Cell[15354, 434, 1092, 19, 60, "Message"],
+Cell[16449, 455, 1103, 19, 62, "Message"],
+Cell[17555, 476, 627, 12, 60, "Message"],
+Cell[18185, 490, 1102, 19, 60, "Message"],
+Cell[19290, 511, 614, 13, 24, "Message"],
+Cell[19907, 526, 9359, 195, 61, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[71050, 1425, 1064, 31, 63, "Input"],
-Cell[72117, 1458, 264, 6, 35, "Output"]
+Cell[29303, 726, 372, 10, 28, "Input"],
+Cell[29678, 738, 41746, 697, 267, "Output"]
 }, Open  ]],
-Cell[72396, 1467, 436, 10, 63, "Input"],
 Cell[CellGroupData[{
-Cell[72857, 1481, 287, 7, 28, "Input"],
-Cell[73147, 1490, 2276, 49, 232, "Output"]
+Cell[71461, 1440, 1064, 31, 63, "Input"],
+Cell[72528, 1473, 264, 6, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72841, 1485, 156, 2, 44, "Subsection"],
+Cell[73000, 1489, 436, 10, 63, "Input"],
+Cell[CellGroupData[{
+Cell[73461, 1503, 287, 7, 28, "Input"],
+Cell[73751, 1512, 2276, 49, 232, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
