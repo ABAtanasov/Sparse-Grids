@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     20096,        630]
-NotebookOptionsPosition[     19454,        605]
-NotebookOutlinePosition[     19811,        621]
-CellTagsIndexPosition[     19768,        618]
+NotebookDataLength[     22709,        687]
+NotebookOptionsPosition[     22104,        663]
+NotebookOutlinePosition[     22461,        679]
+CellTagsIndexPosition[     22418,        676]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -548,10 +548,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.67555751405438*^9, 3.6755576031180077`*^9}, {
   3.675557651394096*^9, 3.675557691767502*^9}}],
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
-  RowBox[{"iteratek", "[", 
-   RowBox[{"k_", ",", "n_", ",", "lp_"}], "]"}], ":=", 
+  RowBox[{"hierIterate", "[", 
+   RowBox[{"k_", ",", "n_List", ",", "lp_List"}], "]"}], ":=", 
   RowBox[{"Module", "[", 
    RowBox[{
     RowBox[{"{", 
@@ -565,43 +565,101 @@ Cell[BoxData[{
         RowBox[{"{", 
          RowBox[{"i", ",", "1", ",", 
           RowBox[{"k", " ", 
-           SuperscriptBox["2", "n"]}]}], "}"}]}], "]"}]}], ";", 
-     RowBox[{"count", "=", "1"}], ";", "\[IndentingNewLine]", 
-     RowBox[{"For", "[", 
-      RowBox[{
-       RowBox[{"level", "=", "0"}], ",", 
-       RowBox[{"level", "\[LessEqual]", "n"}], ",", 
-       RowBox[{"level", "++"}], ",", "\[IndentingNewLine]", 
-       RowBox[{"For", "[", 
-        RowBox[{
-         RowBox[{"place", "=", "1"}], ",", 
-         RowBox[{"place", "\[LessEqual]", 
-          SuperscriptBox["2", 
-           RowBox[{"switch", "[", 
-            RowBox[{"level", "-", "1"}], "]"}]]}], ",", 
-         RowBox[{"place", "++"}], ",", "\[IndentingNewLine]", 
-         RowBox[{"For", "[", 
-          RowBox[{
-           RowBox[{"fnumber", "=", "1"}], ",", 
-           RowBox[{"fnumber", "\[LessEqual]", "k"}], ",", 
-           RowBox[{"fnumber", "++"}], ",", "\[IndentingNewLine]", 
-           RowBox[{
+           SuperscriptBox["2", 
             RowBox[{
-             RowBox[{"hashMap", "\[LeftDoubleBracket]", 
-              RowBox[{"count", "++"}], "\[RightDoubleBracket]"}], "=", 
-             RowBox[{"{", 
-              RowBox[{"fnumber", ",", 
-               RowBox[{"level", "+", "1"}], ",", "place"}], "}"}]}], ";"}]}], 
-          "\[IndentingNewLine]", "]"}]}], "]"}]}], "]"}], ";", 
-     "\[IndentingNewLine]", "\[IndentingNewLine]", 
-     RowBox[{"Return", "[", "hashMap", "]"}], ";"}]}], 
-   "]"}]}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"(*", "working", "*)"}]}]}], "Input",
- CellChangeTimes->{{3.675557714304384*^9, 3.675557736327791*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.675594823116173*^9, 3.6755948237162523`*^9}}]
+            "n", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]]}]}], 
+         "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"count", "=", "1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Length", "[", "n", "]"}], "\[Equal]", "1"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"For", "[", 
+         RowBox[{
+          RowBox[{"level", "=", "0"}], ",", 
+          RowBox[{"level", "\[LessEqual]", 
+           RowBox[{
+           "n", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], ",", 
+          RowBox[{"level", "++"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"place", "=", "1"}], ",", 
+            RowBox[{"place", "\[LessEqual]", 
+             SuperscriptBox["2", 
+              RowBox[{"switch", "[", 
+               RowBox[{"level", "-", "1"}], "]"}]]}], ",", 
+            RowBox[{"place", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"For", "[", 
+             RowBox[{
+              RowBox[{"fnumber", "=", "1"}], ",", 
+              RowBox[{"fnumber", "\[LessEqual]", "k"}], ",", 
+              RowBox[{"fnumber", "++"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"hashMap", "\[LeftDoubleBracket]", 
+                 RowBox[{"count", "++"}], "\[RightDoubleBracket]"}], "=", 
+                RowBox[{"Join", "[", 
+                 RowBox[{"lp", ",", 
+                  RowBox[{"{", 
+                   RowBox[{"fnumber", ",", 
+                    RowBox[{"level", "+", "1"}], ",", "place"}], "}"}]}], 
+                 "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}]}], "]"}]}], 
+         "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", 
+         RowBox[{"Partition", "[", 
+          RowBox[{
+           RowBox[{"Flatten", "[", "hashMap", "]"}], ",", 
+           RowBox[{"3", " ", 
+            RowBox[{"Length", "[", "n", "]"}]}]}], "]"}], "]"}], ";"}], 
+       "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"For", "[", 
+         RowBox[{
+          RowBox[{"level", "=", "0"}], ",", 
+          RowBox[{"level", "\[LessEqual]", 
+           RowBox[{
+           "n", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}]}], ",", 
+          RowBox[{"level", "++"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"For", "[", 
+           RowBox[{
+            RowBox[{"place", "=", "1"}], ",", 
+            RowBox[{"place", "\[LessEqual]", 
+             SuperscriptBox["2", 
+              RowBox[{"switch", "[", 
+               RowBox[{"level", "-", "1"}], "]"}]]}], ",", 
+            RowBox[{"place", "++"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"For", "[", 
+             RowBox[{
+              RowBox[{"fnumber", "=", "1"}], ",", 
+              RowBox[{"fnumber", "\[LessEqual]", "k"}], ",", 
+              RowBox[{"fnumber", "++"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"hashMap", "\[LeftDoubleBracket]", 
+                 RowBox[{"count", "++"}], "\[RightDoubleBracket]"}], "=", 
+                RowBox[{"hierIterate", "[", 
+                 RowBox[{"k", ",", 
+                  RowBox[{"n", "\[LeftDoubleBracket]", 
+                   RowBox[{"2", ";;"}], "\[RightDoubleBracket]"}], ",", 
+                  RowBox[{"Join", "[", 
+                   RowBox[{"lp", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"fnumber", ",", 
+                    RowBox[{"level", "+", "1"}], ",", "place"}], "}"}]}], 
+                   "]"}]}], "]"}]}], ";"}]}], "\[IndentingNewLine]", "]"}]}], 
+           "]"}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", 
+         RowBox[{"Partition", "[", 
+          RowBox[{
+           RowBox[{"Flatten", "[", "hashMap", "]"}], ",", 
+           RowBox[{"3", " ", 
+            RowBox[{"Length", "[", "n", "]"}]}]}], "]"}], "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.675557714304384*^9, 3.675557736327791*^9}, {
+  3.6755973149976683`*^9, 3.675597317639646*^9}}]
 },
 WindowSize->{808, 651},
 WindowMargins->{{Automatic, 12}, {Automatic, 7}},
@@ -630,8 +688,7 @@ Cell[13791, 440, 925, 27, 52, "Input",
  InitializationCell->True],
 Cell[14719, 469, 856, 25, 63, "Input"],
 Cell[15578, 496, 1776, 52, 91, "Input"],
-Cell[17357, 550, 1996, 50, 211, "Input"],
-Cell[19356, 602, 94, 1, 28, "Input"]
+Cell[17357, 550, 4743, 111, 389, "Input"]
 }
 ]
 *)
