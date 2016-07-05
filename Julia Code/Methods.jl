@@ -1,4 +1,3 @@
-
 #------------------------------------------------------
 # Defining the Hat Functions
 #------------------------------------------------------
@@ -54,7 +53,7 @@ end
 function plotfunc1D(f::Function)
     xs=linspace(0,1,300)
     # y = [f((x,)) for x in xs]
-    ys=[f(x,) for x in xs]
+    ys=[f((x,)) for x in xs]
     surf=plot(xs,ys)
 end
 
@@ -81,7 +80,7 @@ end
 
 function standardReconstruct{D,T<:Real}(coefficients::AbstractArray, ls::NTuple{D,Int}, xs::NTuple{D,T})
     positions = ntuple(i -> (1<<ls[i])+1,D)
-    value=0
+    value=0.0
     for place in CartesianRange(positions)
         is = ntuple(i->place[i]-1,D)
         value += coefficients[place]*ψ(ls, is, xs)
@@ -233,7 +232,7 @@ end
 #this will work for both sparse and full cases
 #it also generalizes decently nicely to the DG case
 function reconstruct{D,T<:Real}(coefficients::Dict{CartesianIndex{D}, Array{Float64,D}}, x::NTuple{D,T})
-    value = 0
+    value = 0.0
     for key in keys(coefficients)	#For every level that has coefficients
         level = ntuple(i->key[i]-2,D)	# Get the actual level corresponding to that CartesianIndex
         place = ntuple(i->hat_index(x[i],level[i]),D)  # Get the relevant place for our position x
