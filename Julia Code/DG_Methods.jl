@@ -9,12 +9,12 @@ include("Specific_DG_Functions.jl")
 #------------------------------------------------------
 
 function v(k::Int, level::Int, place::Int, f_number::Int, x::Real)
-	if level==0 #At the base level, we are not discontinuous, and we simply
-				#use Legendre polynomials up to degree k-1 as a basis
+	if level==0 # At the base level, we are not discontinuous, and we simply
+                # use Legendre polynomials up to degree k-1 as a basis
 		return LegendreP(f_number,2x-1)*sqrt(2.0)
 	else
 		return h(k, f_number, (1<<level)*x - (2*place-1)) * (2.0)^(level/2)
-		# Otherwise we use an appropriately shifted, scaled, and normalized
+        # Otherwise we use an appropriately shifted, scaled, and normalized
 		# DG function
 	end
 end
@@ -25,10 +25,10 @@ end
 
 # Returns the value of the function at x
 function V{D,T<:Real}(k, level::NTuple{D,Int}, 
-                place::CartesianIndex{D}, f_number::CartesianIndex{D}, xs::NTuple{D,T})
+    place::CartesianIndex{D}, f_number::CartesianIndex{D}, xs::AbstractArray{T})
 	ans = one(eltype(xs))
-    for k = 1:D
-        ans *= v(k, level[k], place[k], f_number[k], xs[k])
+    for i = 1:D
+        ans *= v(k, level[i], place[i], f_number[i], xs[i])
     end
     return ans
 end
@@ -88,20 +88,19 @@ end
 # This takes an inner product, but since for higher levels our inner product
 # is only concerned with a specific region in the grid, we restrict to that
 # appropriately, depending on the level
-function inner_product{D}(f::Function, g::Function,
-		 		lvl::NTuple{D,Int}, place::CartesianIndex{D})
-	xmin = tuple()
-	xmax = tuple()
+function inner_product{D}(f::Function, g::Function, lvl::NTuple{D,Int}, place::CartesianIndex{D})
+    xmin = ntuple(i-> (place[i]-1)*(0.5)^(-pos(lvl[i]-1)), D)
+	xmax = ntuple(i-> (place[i])*(0.5)^(-pos(lvl[i]-1)), D)
 	h = (x-> f(x)*g(x))
 	(val, err) = hcubature(h, xmin, xmax;) #reltol=1e-8, abstol=0, maxevals=0
-	return value 
+	return val 
 end
 
 # We obtain coefficients simply by doing inner products, it's easy :) 
 # Only hard part is inner product integrations can be slower than we wante :(
 function get_coefficient_DG{D}(k::Int, 
-				f::Function, lvl::NTuple{D,Int}, place::CartesianIndex{D}, f_number::Int)
-	return inner_product(f, V(k,f_number),lvl,place)
+				f::Function, lvl::NTuple{D,Int}, place::CartesianIndex{D}, f_number::CartesianIndex{D})
+    return inner_product(f, V(k,lvl,place,f_number),lvl,place)
 end 
 
 #------------------------------------------------------
@@ -112,21 +111,22 @@ function hier_coefficients_DG{D}(k::Int, f::Function, ls::NTuple{D,Int})
 	# We will make a dictionary, that given a level (represented by a cartesian index)
 	# will lead to a list of coefficients representing the places at that level
 	# and the array f_number telling us which basis element V we are looking at
-	f_numbers= k*ones(Int,D)
+	f_numbers= ntuple(i-> k, D)
     for level in CartesianRange(ls)     # This really goes from 0 to l_i for each i,
-        ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+1 vector
+        ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+2 vector
         level_coeffs = Array(Array{Float64},ks)	 #all the coefficients at this level
 		lvl = ntuple(i -> level[i]-1,D)
         for place in CartesianRange(ks)
+            level_coeffs[place]=Array(Float64,f_numbers)
 			for f_number in CartesianRange(f_numbers)
-            	(level_coeffs[place])[f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
-				# The coefficients of this level at this place 
+                (level_coeffs[place])[f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
+                # The coefficients of this level at this place 
 				# AND at this specific function are computed
             end
         end
         coeffs[level] = level_coeffs
-		# We assign to this CartesianIndex{D} in the dictionary the corresponding
-		# Array of Arrays 
+    	# We assign to this CartesianIndex{D} in the dictionary the corresponding
+		# Array of Arrays
     end
     return coeffs
 end
@@ -137,7 +137,7 @@ end
 #------------------------------------------------------
 function sparse_coefficients_DG(f::Function, n::Int, D::Int)
     coeffs = Dict{CartesianIndex{D}, Array{Array{Float64},D}}()
-	f_numbers= k*ones(Int,D)
+	f_numbers= ntuple(i-> k, D)
     ls = ntuple(i->(n+1),D)
     for level in CartesianRange(ls) #This really goes from 0 to l_i for each i
         diag_level=0;
@@ -151,6 +151,7 @@ function sparse_coefficients_DG(f::Function, n::Int, D::Int)
 	        level_coeffs = Array(Array{Float64},ks)	#the coefficients for all the places at this level
 			lvl = ntuple(i -> level[i]-1,D)
 	        for place in CartesianRange(ks)
+                level_coeffs[place]=Array(Float64,f_numbers)
 				for f_number in CartesianRange(f_numbers)
 	            	(level_coeffs[place])[f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
 				end
@@ -162,12 +163,13 @@ function sparse_coefficients_DG(f::Function, n::Int, D::Int)
 end
 
 
-function reconstruct_DG{D,T<:Real}(k::Int,coefficients::Dict{CartesianIndex{D}, Array{Float64,D}}, x::NTuple{D,T})
+function reconstruct_DG{D,T<:Real}(k::Int,coefficients::Dict{CartesianIndex{D}, Array{Array{Float64},D}}, x::Array{T})
     value = 0.0
-	f_numbers= k*ones(Int,D)
+    f_numbers= ntuple(i-> k ,D)
     for key in keys(coefficients)	#For every level that has coefficients
-        level = ntuple(i->key[i]-2,D)	# Get the actual level corresponding to that CartesianIndex
-        place = ntuple(i->hat_index(x[i],level[i]),D)  # Get the relevant place for our position x
+        level = ntuple(i->key[i]-1,D)	# Get the actual level corresponding to that CartesianIndex
+        place = CartesianIndex{D}(ntuple(i->hat_index(x[i],level[i]),D))
+        # Get the relevant place for our position x
 		for f_number in CartesianRange(f_numbers)
         	value += (coefficients[key])[CartesianIndex{D}(place)][f_number]*V(k,level,place,f_number,x)
 		end 
