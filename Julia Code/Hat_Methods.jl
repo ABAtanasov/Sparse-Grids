@@ -39,7 +39,7 @@ end
 # ψ{D}(ls::NTuple{D,Int}, is::NTuple{D,Int}, ....)
 #Tensor product construction of Lagrange basis
 function ψ{D,T<:Real}(ls::NTuple{D,Int}, is::NTuple{D,Int}, xs::NTuple{D,T})
-    ans=1
+    ans=one(eltype(xs))
     for k = 1:length(ls)
         ans *= ψ(ls[k],is[k],xs[k])
     end
@@ -231,7 +231,8 @@ end
 #------------------------------------------------------
 #this will work for both sparse and full cases
 #it also generalizes decently nicely to the DG case
-function reconstruct{D,T<:Real}(coefficients::Dict{CartesianIndex{D}, Array{Float64,D}}, x::NTuple{D,T})
+function reconstruct{D,T<:Real}(coefficients::Dict{CartesianIndex{D},
+		 						Array{Float64,D}}, x::NTuple{D,T})
     value = 0.0
     for key in keys(coefficients)	#For every level that has coefficients
         level = ntuple(i->key[i]-2,D)	# Get the actual level corresponding to that CartesianIndex
