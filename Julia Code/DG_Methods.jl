@@ -11,7 +11,7 @@ include("Specific_DG_Functions.jl")
 function v(k::Int, level::Int, place::Int, f_number::Int, x::Real)
 	if level==0 # At the base level, we are not discontinuous, and we simply
                 # use Legendre polynomials up to degree k-1 as a basis
-		return LegendreP(f_number,2x-1)*sqrt(2.0)
+		return LegendreP(f_number-1,2*x-1)*sqrt(2.0)
 	else
 		return h(k, f_number, (1<<level)*x - (2*place-1)) * (2.0)^(level/2)
         # Otherwise we use an appropriately shifted, scaled, and normalized
@@ -89,10 +89,15 @@ end
 # is only concerned with a specific region in the grid, we restrict to that
 # appropriately, depending on the level
 function inner_product{D}(f::Function, g::Function, lvl::NTuple{D,Int}, place::CartesianIndex{D})
-    xmin = ntuple(i-> (place[i]-1)*(0.5)^(-pos(lvl[i]-1)), D)
-	xmax = ntuple(i-> (place[i])*(0.5)^(-pos(lvl[i]-1)), D)
+    xmin = ntuple(i-> (place[i]-1)*(0.5)^(pos(lvl[i]-1)), D)
+	xmax = ntuple(i-> (place[i])*(0.5)^(pos(lvl[i]-1)), D)
 	h = (x-> f(x)*g(x))
-	(val, err) = hcubature(h, xmin, xmax;) #reltol=1e-8, abstol=0, maxevals=0
+    (val, err) = hcubature(h, xmin, xmax;
+					reltol=1e-8, 
+					#^Standard
+					abstol=1e-12, 
+					#^This was set by me so that some small-valued integrals wouldn't take forever
+					maxevals=0)
 	return val 
 end
 
@@ -113,12 +118,13 @@ function hier_coefficients_DG{D}(k::Int, f::Function, ls::NTuple{D,Int})
 	# and the array f_number telling us which basis element V we are looking at
 	f_numbers= ntuple(i-> k, D)
     for level in CartesianRange(ls)     # This really goes from 0 to l_i for each i,
-        ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+2 vector
+        ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+1 vector
         level_coeffs = Array(Array{Float64},ks)	 #all the coefficients at this level
 		lvl = ntuple(i -> level[i]-1,D)
         for place in CartesianRange(ks)
             level_coeffs[place]=Array(Float64,f_numbers)
 			for f_number in CartesianRange(f_numbers)
+                #@show (lvl,place,f_number)
                 (level_coeffs[place])[f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
                 # The coefficients of this level at this place 
 				# AND at this specific function are computed
