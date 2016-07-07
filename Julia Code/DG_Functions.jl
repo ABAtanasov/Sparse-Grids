@@ -2,14 +2,9 @@
 # Defining the DG Functions
 #------------------------------------------------------
 
-function f(j::Int,x::Real)
-    if x>0
-        return x^j
-    elseif x<0
-        return - x^j
-    else
-        return 0
-    end
+# TODO: rname this
+@fastmath function f(j::Int,x::Real)
+	copysign(abs(x)^j, x)
 end
 
 

@@ -89,15 +89,10 @@ end
 # is only concerned with a specific region in the grid, we restrict to that
 # appropriately, depending on the level
 function inner_product{D}(f::Function, g::Function, lvl::NTuple{D,Int}, place::CartesianIndex{D})
-    xmin = ntuple(i-> (place[i]-1)*(0.5)^(pos(lvl[i]-1)), D)
-	xmax = ntuple(i-> (place[i])*(0.5)^(pos(lvl[i]-1)), D)
+    xmin = ntuple(i-> (place[i]-1)/(1<<(pos(lvl[i]-1))), D)
+	xmax = ntuple(i-> (place[i])/(1<<(pos(lvl[i]-1))), D)
 	h = (x-> f(x)*g(x))
-    (val, err) = hcubature(h, xmin, xmax;
-					reltol=1e-8, 
-					#^Standard
-					abstol=1e-12, 
-					#^This was set by me so that some small-valued integrals wouldn't take forever
-					maxevals=0)
+    (val, err) = hcubature(h, xmin, xmax; reltol=1e-8, abstol=1e-8, maxevals=0)
 	return val 
 end
 
@@ -141,7 +136,7 @@ end
 #------------------------------------------------------
 # Sparse Galerkin Coefficients in n-D
 #------------------------------------------------------
-function sparse_coefficients_DG(f::Function, n::Int, D::Int)
+function sparse_coefficients_DG(k::Int, f::Function, n::Int, D::Int)
     coeffs = Dict{CartesianIndex{D}, Array{Array{Float64},D}}()
 	f_numbers= ntuple(i-> k, D)
     ls = ntuple(i->(n+1),D)
@@ -152,18 +147,20 @@ function sparse_coefficients_DG(f::Function, n::Int, D::Int)
         end
         if diag_level > n + D #If we're past the levels we care about, don't compute coeffs
             continue
-        else  #Otherwise we'll go ahead and DO IT. The same code follows as before.
-	        ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+2 vector
-	        level_coeffs = Array(Array{Float64},ks)	#the coefficients for all the places at this level
-			lvl = ntuple(i -> level[i]-1,D)
-	        for place in CartesianRange(ks)
-                level_coeffs[place]=Array(Float64,f_numbers)
-				for f_number in CartesianRange(f_numbers)
-	            	(level_coeffs[place])[f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
-				end
-	        end
-	        coeffs[level] = level_coeffs
+        end  #Otherwise we'll go ahead and DO IT. The same code follows as before.
+	    ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+1 vector
+        level_coeffs = Array(Array{Float64},ks)	 #all the coefficients at this level
+        lvl = ntuple(i -> level[i]-1,D)
+	    for place in CartesianRange(ks)
+            level_coeffs[place]=Array(Float64,f_numbers)
+            for f_number in CartesianRange(f_numbers)
+                level_coeffs[place][f_number]=get_coefficient_DG(k,f,lvl,place,f_number)
+                # The coefficients of this level at this place 
+                # AND at this specific function are computed
+            end
         end
+        #@show lvl
+	    coeffs[level] = level_coeffs
     end
     return coeffs
 end
