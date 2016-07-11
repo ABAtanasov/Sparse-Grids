@@ -1,6 +1,77 @@
 include("DG_Functions.jl")
 include("Specific_DG_Functions.jl")
 include("DG_Methods.jl")
+include("Differentiation.jl")
+
+#------------------------------------------------------
+# 1-D Derivatives
+#------------------------------------------------------
+
+function dLegendreP(k,x)
+    k<=K_max || throw(DomainError())
+    return array2poly(symbolic_diff(Leg_coeffs[k+1]),x)
+end
+
+function dLegendreP(k)
+    k<=K_max || throw(DomainError())
+    return array2poly(symbolic_diff(Leg_coeffs[k+1]))
+end
+
+function dh(k,f_number,x)
+    f_number<=k || throw(DomainError())
+    return array2poly(symbolic_diff((DG_coeffs[k])[f_number]),x)
+end
+
+function dh(k,f_number)
+    f_number<=k || throw(DomainError())
+    return array2poly(symbolic_diff((DG_coeffs[k])[f_number]))
+end
+
+#------------------------------------------------------
+# Shifted and scaled derivatives: v
+#------------------------------------------------------
+
+function dv(k::Int, level::Int, place::Int, f_number::Int, x::Real)
+	if level==0 # At the base level, we are not discontinuous, and we simply
+                # use Legendre polynomials up to degree k-1 as a basis
+        return 2*dLegendreP(f_number-1,2*x-1)*sqrt(2.0)
+	else
+        return (1<<(level))*dh(k, f_number, (1<<level)*x - (2*place-1)) * (2.0)^(level/2)
+        # Otherwise we use an appropriately shifted, scaled, and normalized
+		# DG function
+	end
+end
+
+function dv(k::Int, level::Int, place::Int, f_number::Int)
+    return (xs::Real -> dv(k,level,place,f_number,xs))
+end
+
+#------------------------------------------------------
+# Multidimensional derivatives
+#------------------------------------------------------
+
+function dV{D,T<:Real}(i::Int, k::Int, level::NTuple{D,Int}, 
+    place::CartesianIndex{D}, f_number::CartesianIndex{D}, xs::AbstractArray{T})
+
+    ans = one(eltype(xs))
+    for j = 1:D
+        if j == i
+            ans *= dv(k, level[j], place[j], f_number[j], xs[j])
+        else
+            ans *= v(k, level[j], place[j], f_number[j], xs[j])
+        end
+    end
+    return ans
+end
+
+function dV{D}(i, k, level::NTuple{D,Int}, 
+                place::CartesianIndex{D}, f_number::CartesianIndex{D})
+    return (xs::AbstractArray{Real} -> dV(i, k, level, place, f_number, xs))
+end
+
+#------------------------------------------------------
+# Numerical Inner Product
+#------------------------------------------------------
 
 function inner_product1D(f::Function, g::Function, lvl::Int, place::Int)
     xmin = (place-1)/(1<<(pos(lvl-1)))
@@ -9,7 +80,11 @@ function inner_product1D(f::Function, g::Function, lvl::Int, place::Int)
     (val, err) = hquadrature(h, xmin, xmax; reltol=1e-8, abstol=1e-8, maxevals=0)
 	return val 
 end
-#don't need to do anything numerically here, I don't think
+#There may be a way to do this all symbolically, with no use for numerics
+
+#------------------------------------------------------
+# Taking Derivative of Array Representing Polynomial
+#------------------------------------------------------
 
 function symbolic_diff{T<:Real}(v::Array{T})
 	n=length(v)
@@ -28,6 +103,10 @@ function symbolic_diff{T<:Real}(v::Array{T})
 end
 #working
 
+#------------------------------------------------------
+# < f_1 | D | f_2 > matrix elements
+#------------------------------------------------------
+
 function legendreDlegendre(f_number1::Int, f_number2::Int)
 	return inner_product(Leg_coeffs[f_number1],symbolic_diff(Leg_coeffs[f_number2]))
 end 
@@ -40,96 +119,107 @@ end
 function vDv(k::Int, lvl1::Int, place1::Int, f_number1::Int, lvl2::Int, place2::Int, f_number2::Int)
 	if lvl1 == lvl2
 		if lvl1 == 0
-			return legendreDlegendre(f_number1, f_number2)
+			return 2*legendreDlegendre(f_number1, f_number2)
 		end
 		if place1 == place2
-			return hDh(k, f_number1, f_number2)*(1<<pos(lvl1-1))
+			return hDh(k, f_number1, f_number2)*(1<<pos(lvl1))
 		end
 		return 0.0
 	end
 	if lvl1 < lvl2
 		if lvl1 == 0
-			return inner_product1D(v(k,0,1,f_number1), v(k,lvl2,place2,f_number2), lvl2, place2)
+            return inner_product1D(v(k,0,1,f_number1), dv(k,lvl2,place2,f_number2), lvl2, place2)
 		end
 		if (1<<(lvl2-lvl1))*place1 >= place2 && (1<<(lvl2-lvl1))*(place1-1) < place2
-			return inner_product1D(v(k,lvl1,place1,f_number1), v(k,lvl2,place2,f_number2), lvl2, place2)
+            #@show (lvl1, place1, lvl2, place2)
+            return inner_product1D(v(k,lvl1,place1,f_number1), dv(k,lvl2,place2,f_number2), lvl2, place2)
 		end
 		return 0.0
+    end
 	return 0.0
-	# if lvl1 == 0 && lvl2==0
-	# 	return legendreDlegendre(f_number1,f_number2)
-	# elseif lvl1 ==0
-	# 	return inner_product(Leg_coeffs[f_number1],symbolic_diff(DG_coeffs[k][f_number2]))
-	# elseif lvl2 ==0
-	# 	return inner_product(DG_coeffs[k][f_number1],symbolic_diff(Leg_coeffs[f_number2]))
-	# end
-	# if place1 == place2
-	# 	return hDh(k, f_number1, f_number2)
-	# return 0
-	# #Now we're out of the zone where we have to deal with level 0 Legendre
-	# elseif lvl1 > lvl2
-# 		#xmin1, xmax1 are close together, since lvl1 is finer
-# 	    xmin1 = (place1-1)/(1<<(pos(lvl1-1)))
-# 		xmax1 = (place1)/(1<<(pos(lvl1-1)))
-# 		#xmin2, xmax2 are further apart, and need to have xmin2 < xmin1 < xmax1 < xmax2
-# 	    xmin2 = (place2-1)/(1<<(pos(lvl2-1)))
-# 		xmin2 = (place2)/(1<<(pos(lvl2-1)))
-# 		if xmin1 < xmin2 || xmax1 > xmax2
-# 			return 0.0
-# 		end
-# 		if xmax11s3d2
-#
-# 		return inner_product1D(v(k, lvl1, place1, f_number1),
-# 									v(k, lvl2, place2, f_number2), lvl1, place1)
-#
-# 	elseif lvl2 > lvl1
-#
-#
-# 		#return vDv(k,lvl2,place2,f_number2,lvl1,place1,f_number1)
-# 		# NOOOO
-# 	elseif lvl1==lvl2
-# 		if place1==place2
-# 			return inner_product(DG_coeffs[k][f_number1],symbolic_diff(DG_coeffs[k][f_number1]))
-# 			#return inner_product1D(v(k, lvl1, place1, f_number1),
-# 			#						v(k, lvl2, place2, f_number2), lvl1, place1)
-# 		end
-# 		return 0.0
-# 	end
-#
+
 end
 
-# function VDV(i::Int, k::Int,
-# 	lvl1::NTuple{Int,D}, place1::CartesianIndex{D}, f_number1::CartesianIndex{D},
-# 	lvl2::NTuple{Int,D}, place2::CartesianIndex{D}, f_number2::CartesianIndex{D})
-# end
+#------------------------------------------------------
+# < f_1 | D | f_2 > for a specific f_2 over all f_1
+#------------------------------------------------------
 
-function getDerivs{D,T<:Real}(k, coeffs::Dict{CartesianIndex{D}, Array{Array{T},D}}, 
-								level::Int, place::Int, f_number)
-	f_numbers = ntuple(i -> k, D)
-	derivs = Array(T,D)
-	for f_number2 in CartesianRange(f_numbers)
-		coeffs[level][place][f_number]
-	end
-end
-
-function D_matrix_sparse(i::Int, n::Int, d::Int)
-	D_i = Dict{CartesianIndex{D}, Array{Array{Any},D}}()
-	f_numbers= ntuple(i-> k, D)
-    ls = ntuple(i->(n+1),D)
-	for level in CartesianRange(ls) #This really goes from 0 to l_i for each i 
-        diag_level=0;
-        for i in 1:D
-            diag_level+=level[i]
+function diff_basis_DG(k::Int, level::Int, place::Int, f_number::Int)
+    dcoeffs = Array(Float64, (level+1,k))
+    p = place
+    for l in level:-1:0
+        for f_n in 1:k
+            dcoeffs[l+1,f_n]=vDv(k, l, p, f_n, level, place, f_number)
         end
-        if diag_level > n + D #If we're past the levels we care about, don't compute coeffs
-            continue
-        end
-		ks = ntuple(i -> 1<<pos(level[i]-2), D)
-		for place in CartesianRange(ks)
-			for f_number in CartesianRange(f_numbers)
-				#maybe literally make a dictionary applicable only when= overlap = true
-
-			end
-		end
-	end
+        p = Int(ceil(p/2))
+    end
+    return dcoeffs
 end
+
+#------------------------------------------------------
+# Precompute relevant 1-D basis elements
+#------------------------------------------------------
+
+precomputed_diffs = Dict{NTuple{4,Int},Array{Float64,2}}()
+
+for level in 0:7
+    for place in 1:(1<<pos(level-1)) 
+        for f_number in 1:3
+            precomputed_diffs[(3,level,place,f_number)] = diff_basis_DG(3,level,place,f_number)
+        end
+    end
+end
+
+#------------------------------------------------------
+# Modifying a coefficient set to get derivative coeffs 
+# Asscociated with a specific basis function V
+#------------------------------------------------------
+
+function dchange{D,T<:Real}(k::Int,i::Int,dcoeffs::Dict{CartesianIndex{D}, Array{Array{Float64},D}},c::T,
+    lvl::NTuple{D,Int}, place::CartesianIndex{D}, f_number::CartesianIndex{D})
+    p = place[i]
+    for l in lvl[i]:-1:0
+        lvl1= ntuple(j-> j==i?l+1:(lvl[j]+1) ,D)
+        place1=ntuple(j-> j==i?p:place[j] ,D)
+        for f_n in 1:k
+            f_number1=ntuple(j-> j==i?f_n:f_number[j] ,D)
+            dcoeffs[CartesianIndex{D}(lvl1)][CartesianIndex{D}(place1)][CartesianIndex{D}(f_number1)] += c*precomputed_diffs[(k,lvl[i],place[i],f_number[i])][l+1,f_n]
+
+        end
+        p = Int(ceil(p/2))
+    end
+end
+
+#------------------------------------------------------
+# Finally, getting derivative coeffs from a coeff set
+#------------------------------------------------------
+
+function diff_coefficients_DG{D}(i::Int, k::Int,
+                        coeffs::Dict{CartesianIndex{D}, Array{Array{Float64},D}})
+    
+    dcoeffs=deepcopy(coeffs)
+    f_numbers= ntuple(i-> k, D)
+    
+    for key in keys(coeffs)
+        ks = ntuple(i -> 1<<pos(key[i]-2), D) 
+        for place in CartesianRange(ks)
+            for f_number in CartesianRange(f_numbers)
+                dcoeffs[key][place][f_number]=0
+            end
+        end
+    end
+    
+    for key in keys(coeffs)
+        level = ntuple(i-> key[i]-1,D)
+        ks = ntuple(i -> 1<<pos(level[i]-1), D) 
+        for place in CartesianRange(ks)
+            for f_number in CartesianRange(f_numbers)
+                c=coeffs[key][place][f_number]
+                dchange(k,i,dcoeffs,c,level,place,f_number)
+            end
+        end
+    end
+    return dcoeffs
+end
+    
+
