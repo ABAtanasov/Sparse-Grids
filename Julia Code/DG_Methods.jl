@@ -19,12 +19,16 @@ function v(k::Int, level::Int, place::Int, f_number::Int, x::Real)
 	end
 end
 
+function v(k::Int, level::Int, place::Int, f_number::Int)
+	return (xs-> v(k,level,place,f_number,xs))
+end
+
 #------------------------------------------------------
 # Tensor Product Construction
 #------------------------------------------------------
 
 # Returns the value of the function at x
-function V{D,T<:Real}(k, level::NTuple{D,Int}, 
+function V{D,T<:Real}(k::Int, level::NTuple{D,Int}, 
     place::CartesianIndex{D}, f_number::CartesianIndex{D}, xs::AbstractArray{T})
 	ans = one(eltype(xs))
     for i = 1:D

@@ -4,7 +4,7 @@ const K_max = 10;
 
 #Going from Arrays to Polynomials
 
-@fastmath function array2poly{T<:Real}(v::Array{T},x)
+@fastmath function array2poly{T<:Real}(v::Array{T},x::Real)
     if abs(x)>1 
 		return zero(T)
 	end
@@ -12,10 +12,13 @@ const K_max = 10;
     k=div(n,2)
 	s = zero(T)
 	xi = one(T)
-	@inbounds for i in 1:k
-		# TODO: use Horner's method
-		s += v[i] * xi + v[i+k] * f(i-1,x)
-		xi *= x
+	@inbounds for i in k:-1:1
+		# TODO: use Horner's method (Done)
+		#s += v[i] * xi + v[i+k] * f(i-1,x)
+		#s += v[i] * xi + v[i+k] * flipsign(xi, x)
+		s *= x
+		s += v[i] + flipsign(v[i+k],x)
+		#xi *= x
 	end
 	return s
 end
@@ -52,7 +55,7 @@ function h(k,f_number,x)
 end
 
 function h(k,f_number)
-    f_number<=k?0:throw(DomainError())
+    f_number<=k || throw(DomainError())
     return array2poly((DG_coeffs[k])[f_number])
 end
 

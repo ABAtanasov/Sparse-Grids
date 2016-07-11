@@ -3,8 +3,9 @@
 #------------------------------------------------------
 
 # TODO: rname this
+# I don't even think I need it
 @fastmath function f(j::Int,x::Real)
-	copysign(abs(x)^j, x)
+	flipsign(x^j, x)
 end
 
 
@@ -195,7 +196,7 @@ end
 function DG_Basis(k::Int)
     Q = [[j==(i-k)?1.0:0.0 for i in 1:2*k] for j in 1:k]
     Q = orthogonalize_1(Q)
-    Q = orthogonalize_2(Q) #check here (its close?)
+    Q = orthogonalize_2(Q) 
     Q = gram_schmidt_rev(Q)
     return Q
 end
