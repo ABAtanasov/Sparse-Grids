@@ -156,19 +156,7 @@ function diff_basis_DG(k::Int, level::Int, place::Int, f_number::Int)
     return dcoeffs
 end
 
-#------------------------------------------------------
-# Precompute relevant 1-D basis elements
-#------------------------------------------------------
 
-precomputed_diffs = Dict{NTuple{4,Int},Array{Float64,2}}()
-
-for level in 0:7
-    for place in 1:(1<<pos(level-1)) 
-        for f_number in 1:3
-            precomputed_diffs[(3,level,place,f_number)] = diff_basis_DG(3,level,place,f_number)
-        end
-    end
-end
 
 #------------------------------------------------------
 # Modifying a coefficient set to get derivative coeffs 
