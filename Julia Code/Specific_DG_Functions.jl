@@ -14,11 +14,8 @@ const K_max = 10;
 	xi = one(T)
 	@inbounds for i in k:-1:1
 		# TODO: use Horner's method (Done)
-		#s += v[i] * xi + v[i+k] * f(i-1,x)
-		#s += v[i] * xi + v[i+k] * flipsign(xi, x)
 		s *= x
 		s += v[i] + flipsign(v[i+k],x)
-		#xi *= x
 	end
 	return s
 end

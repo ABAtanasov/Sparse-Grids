@@ -1,6 +1,20 @@
 using PyPlot
 using Cubature
 
+
+#------------------------------------------------------
+# In this julia script, we have all our methods for
+# taking a function and returning an appropriate list
+# of DG coefficients.
+# 
+# 
+#
+#
+#
+#------------------------------------------------------
+
+
+
 include("DG_Functions.jl")
 include("Specific_DG_Functions.jl")
 
@@ -96,7 +110,7 @@ function inner_product{D}(f::Function, g::Function, lvl::NTuple{D,Int}, place::C
     xmin = ntuple(i-> (place[i]-1)/(1<<(pos(lvl[i]-1))), D)
 	xmax = ntuple(i-> (place[i])/(1<<(pos(lvl[i]-1))), D)
 	h = (x-> f(x)*g(x))
-    (val, err) = hcubature(h, xmin, xmax; reltol=1e-8, abstol=1e-8, maxevals=0)
+    (val, err) = hcubature(h, xmin, xmax; reltol=1e-8, abstol=1e-10, maxevals=250)
 	return val 
 end
 
@@ -400,12 +414,19 @@ function sparse_size(k,n,D)
 end
 
 function vsparse_coefficients_DG(k::Int, f::Function, n::Int, D::Int)
- 	l = sparse_size(1,3,2)
+ 	l = sparse_size(k,n,D)
     coeffs = Array(Float64, l)
 	f_numbers= ntuple(i-> k, D)
 	ls = ntuple(i-> (n+1),D)
 	j=1
     for level in CartesianRange(ls)     # This really goes from 0 to l_i for each i,
+        diag_level=0;
+        for q in 1:D
+            diag_level+=level[q]
+        end
+        if diag_level > n + D #If we're past the levels we care about, don't compute coeffs
+            continue
+        end  
         ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+1 vector
 		lvl = ntuple(i -> level[i]-1,D)
         for place in CartesianRange(ks)
