@@ -196,7 +196,6 @@ function diff_coefficients_DG{D}(i::Int, k::Int,
             end
         end
     end
-    
     for key in keys(coeffs)
         level = ntuple(i-> key[i]-1,D)
         ks = ntuple(i -> 1<<pos(level[i]-1), D) 

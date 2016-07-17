@@ -25,7 +25,7 @@ function diffOneVariable(f::Function, l::Int, x::Real)
 end
 #working
 
-function diff{T<:Real}(i::Int, f::Function, l::Int, x::Array{T})
+function ndiff{T<:Real}(i::Int, f::Function, l::Int, x::Array{T})
 	h = 1.0/(1<<l)
 	if x[i]< h
 		x[i]+=h
@@ -52,5 +52,5 @@ end
 
 #Full gradient, returning an NTuple:
 function grad{T<:Real}(f::Function, l::Int, x::Array{T})
-	return ntuple(i-> diff(i,f,l,x))
+	return ntuple(i-> ndiff(i,f,l,x))
 end
