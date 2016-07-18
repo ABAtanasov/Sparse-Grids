@@ -1,4 +1,5 @@
 include("DG_Methods.jl")
+include("DG_Derivative_Matrix.jl")
 
 using Cubature
 #------------------------------------------------------
@@ -223,15 +224,16 @@ end
 #------------------------------------------------------
 
 function vhier_coefficients_DG{D}(k::Int, f::Function, ls::NTuple{D,Int})
- 	l = k^D * 2^(sum(ls-1))
+ 	l = k^D * 2^(sum(ls)-D)
     coeffs = Array(Float64, l)
 	f_numbers= ntuple(i-> k, D)
+	j=1
     for level in CartesianRange(ls)     # This really goes from 0 to l_i for each i,
         ks = ntuple(i -> 1<<pos(level[i]-2), D)  #This sets up a specific k+1 vector
 		lvl = ntuple(i -> level[i]-1,D)
         for place in CartesianRange(ks)
 			for f_number in CartesianRange(f_numbers)
-                coeffs[j]=get_coefficient_DG(k,f,level,place,f_number)
+                coeffs[j]=get_coefficient_DG(k,f,lvl,place,f_number)
 				j+=1          
             end
         end
@@ -294,11 +296,12 @@ function vfull_reconstruct_DG{D,T<:Real}(k::Int, coeffs::Array{T}, ls::NTuple{D,
 	return value
 end
 
-function vsparse_reconstruct_DG{D,T<:Real}(k::Int, coeffs::Array{T},
-		 					ls::NTuple{D,Int}, x::Array{T})
+function vsparse_reconstruct_DG{T<:Real}(k::Int, coeffs::Array{T},
+		 					n::Int, D::Int, x::Array{T})
 	
 	value = 0.0
 	f_numbers= ntuple(i-> k ,D)
+	ls = ntuple(i-> n+1 , D)
 	j=1
 	for level in CartesianRange(ls)	
         diag_level=0;
@@ -322,6 +325,7 @@ end
 #------------------------------------------------------
 # And now here's the point of doing all of this:
 # efficiently computing a size P log P matrix
+# to represent the derivative operator
 #------------------------------------------------------
 
 function sD_matrix{D}(i::Int, k::Int,
@@ -338,10 +342,11 @@ function sD_matrix{D}(i::Int, k::Int,
             for f_n in 1:k
                 f_number2= CartesianIndex{D}(ntuple(j-> j==i?f_n:lpf[3][j] ,D))
                 c2 = srefDV[[level2,place2,f_number2]]
-                sMat[c1,c2] += precomputed_diffs[(k,lpf[1][i]-1,lpf[2][i],lpf[3][i])][level,f_n]
+                sMat[c2,c1] += precomputed_diffs[(k,lpf[1][i]-1,lpf[2][i],lpf[3][i])][level,f_n]
             end
             p = Int(ceil(p/2))
         end
     end
     return sMat
 end
+
