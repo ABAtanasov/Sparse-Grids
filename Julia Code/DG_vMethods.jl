@@ -275,6 +275,7 @@ function sD_matrix(k::Int, n::Int, D::Int)
 	sp
 end
 
+#NOT WORKING: 
 function vfull_reconstruct_DG{D,T<:Real}(k::Int, coeffs::Array{T}, ls::NTuple{D,Int}, x::Array{T})
 	value = 0.0
 	f_numbers= ntuple(i-> k ,D)
